@@ -1,0 +1,50 @@
+* {
+    background-color: #e6e6ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    margin-top: 0%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+}
+
+a {
+    font-size: 22px;
+    padding: 30px;
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+#intro,
+.blog,
+aside {
+    margin-left: 60px;
+    margin-right: 100px;
+}
+
+#paragraph1,
+ul,
+ol {
+    font-size: 22px;
+}
+
+#intro h3,
+.blog h4 {
+    font-size: 20px;
+}
+
+button {
+    padding: 20px 40px;
+    margin-left: 280px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+/*This line marks the end of css*/
