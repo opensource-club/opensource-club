@@ -55,12 +55,22 @@ Bronze:
 
 --------------------------------------------------------------------------
 
-DAY-04;:
- To be announced
+DAY-04:
+
+Gold:
++ Sahana M
++  Madhu Mitha L
+
+Silver:
++ Akash Kanna
+
+Bronze:
++ Sri Ranjini
++ Mohamed Anas
 
  --------------------------------------------------------------------------
 
- DAY-05:
+Final Project
 
 To be announced
 
