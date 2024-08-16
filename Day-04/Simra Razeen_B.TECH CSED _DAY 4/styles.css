@@ -1,0 +1,194 @@
+/* General Reset */
+* {
+    /* Remove dmargin and padding for all elements */
+    margin: 0;t 
+    padding: 0;
+
+    /* Box sizing shoyld be same for all the elements */
+    box-sizing: border-box;
+
+    /* Set the font family for the entire product card  */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for Product Cards */
+.product-cards {
+    /* Flexbox is a layout model that allows elements to align and distribute space within a container.
+*/
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Product Card Styling */
+.product-card {
+    /* Set the background color of each product card */
+    background-color: #fff;
+
+    /* Add radius to round the borders of the box */
+    border-radius: 12px;
+   /* For adding shadow to the box*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 280px;
+/* Since transition is been used from one product to other set the suration for a betterlooking transition*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Product Card */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Wrapper Styling */
+.product-card__image-wrapper {
+    /*  Image wrapper  should take full width */
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    /* Relative positioning property that allows an element to be positioned relative to its normal position in the document flow*/
+    position: relative;
+}
+
+/* Image Styling */
+.product-card__image {
+    /* Make the image take full width of its container */
+    width: 100%;
+    display: block;
+    object-fit: cover;
+   transition: transform 0.3s ease;
+}
+
+
+.product-card__image-wrapper:hover .product-card__image {
+    
+    transform: scale(1.05);
+}
+
+/* Product Information Styling */
+.product-card__info {
+    /* Add padding */
+    padding: 15px;
+    /* Allign the text to the center*/
+    text-align: center;
+}
+
+/* Product Title Styling */
+.product-card__title {
+    /* Set the font size */
+    font-size: 1.5rem;
+
+    /* Set the text color*/
+    color: #333;
+
+    /* Add space below the product title */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Swatch Container Styling */
+.product-card__swatches {
+    /* Use Flexbox to align swatches in a row */
+    display: flex;
+
+    /* Center the swatches within the container */
+    justify-content: center;
+
+    /* Add space between swatches */
+    gap: 10px;
+
+    /* Add space below the swatches */
+    margin-bottom: 15px;
+}
+
+/* Individual Swatch Styling */
+.product-card__swatch {
+    /* Set a fixed size for each swatch */
+    width: 25px;
+    height: 25px;
+
+    /* Make the swatches circular */
+    border-radius: 50%;
+
+    /* Add a light border around each swatch */
+    border: 2px solid #ddd;
+
+    /* Change cursor to pointer to indicate interactivity */
+    cursor: pointer;
+
+    /* Enable smooth border transition on hover */
+    transition: border 0.3s ease;
+}
+
+/* Swatch Hover Effect */
+.product-card__swatch:hover {
+    /* Darken the border on hover for emphasis */
+    border: 2px solid #333;
+}
+
+/* Price Wrapper Styling */
+.product-card__price-wrapper {
+    /* Add space below the price */
+    margin-bottom: 20px;
+}
+
+/* Price Styling */
+.product-card__price {
+    /* Set the font size for the price */
+    font-size: 1.4rem;
+
+    /* Set the text color for the price */
+    color: #000;
+
+    /* Make the price text bold */
+    font-weight: bold;
+}
+
+/* Button Container Styling */
+.product-card__buttons {
+    /* Use Flexbox to align buttons in a row */
+    display: flex;
+
+    /* Center the buttons within the container */
+    justify-content: center;
+
+    /* Add space between buttons */
+    gap: 10px;
+}
+
+/* General Button Styling */
+.product-card__button {
+    background-color: #6c63ff;
+
+    /* Set the text color  */
+    color: #fff;
+
+    /* Add padding  */
+    padding: 10px 15px;
+
+    /* Round the corners   */
+    border-radius: 25px;
+
+    /* Remove default border */
+    border: none;
+    cursor: pointer;
+
+    /* Make the button text bold */
+    font-weight: bold;
+}
+
+.product-card__button--add {
+    background-color: #ff6b6b;
+}
+
+/* Button Hover Effect */
+.product-card__button:hover {
+    background-color: #5a5af1;
+}
+
+/* Add to Cart Button Hover Effect */
+.product-card__button--add:hover {
+    background-color: #e63946;
+}

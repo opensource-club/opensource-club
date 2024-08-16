@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--creating the head of a basic html structure--> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lipstick Product Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- create a title for the product card page -->
+    <center><h1 style ="color:blueviolet">❤️__!!! NYKAA LIPSTICK SALE!!!!__❤️</center></h1>
+    <!-- Create division for each lipstick shade ,here in this code i have used 3 different lipstick shades for reference-->
+    <div class="product-cards">
+        <div class="product-card">
+            <div class="product-card__image-wrapper">
+                <img src="lipstick1.jpg" alt="Lipstick Shade 1" class="product-card__image">
+            </div>
+            <div class="product-card__info">
+                <h2 class="product-card__title"> CLASSIC RED</h2>
+                <div class="product-card__swatches">
+                    <!--  <span> element is an inline container typically used to group or style a part of a text or document.-->
+                    <span class="product-card__swatch" style="background-color: #c92a2a;"></span>
+                    <span class="product-card__swatch" style="background-color: #d6336c;"></span>
+                    <span class="product-card__swatch" style="background-color: #e64980;"></span>
+                </div>
+                <div class="product-card__price-wrapper">
+                    <!-- use span to add the price of the product-->
+                    <span class="product-card__price">RS.899 only</span>
+                </div>
+                <div class="product-card__buttons">
+                    <button class="product-card__button product-card__button--add">Add to Cart</button>
+                    <button class="product-card__button product-card__button--buy">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat for other two cards with different lipstick shades -->
+        <!-- Card 2 -->
+        <div class="product-card">
+            <div class="product-card__image-wrapper">
+                <img src="lipstick2.jpg" alt="Lipstick Shade 2" class="product-card__image">
+            </div>
+            <div class="product-card__info">
+                <h2 class="product-card__title">CORAL MATE</h2>
+                <div class="product-card__swatches">
+                    <span class="product-card__swatch" style="background-color: #a61e4d;"></span>
+                    <span class="product-card__swatch" style="background-color: #c92a2a;"></span>
+                    <span class="product-card__swatch" style="background-color: #e03131;"></span>
+                </div>
+                <div class="product-card__price-wrapper">
+                    <span class="product-card__price">RS.780 only</span>
+                </div>
+                <div class="product-card__buttons">
+                    <button class="product-card__button product-card__button--add">Add to Cart</button>
+                    <button class="product-card__button product-card__button--buy">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- similarly finish the  Card 3 -->
+        <div class="product-card">
+            <div class="product-card__image-wrapper">
+                <img src="lipstick3.jpg" alt="Lipstick Shade 3" class="product-card__image">
+            </div>
+            <div class="product-card__info">
+                <h2 class="product-card__title">BERRY PINK</h2>
+                <div class="product-card__swatches">
+                    <span class="product-card__swatch" style="background-color: #862e9c;"></span>
+                    <span class="product-card__swatch" style="background-color: #be4bdb;"></span>
+                    <span class="product-card__swatch" style="background-color: #f06595;"></span>
+                </div>
+                <div class="product-card__price-wrapper">
+                    <span class="product-card__price">RS.1229  only</span>
+                </div>
+                <div class="product-card__buttons">
+                    <button class="product-card__button product-card__button--add">Add to Cart</button>
+                    <button class="product-card__button product-card__button--buy">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
