@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+</head>
+<body>
+    <!-- div tags are used for division of pages -->
+    <div class="product-card">
+        <!-- product image is inserted -->
+        <img src="productimg.jpg" alt="Product Image" class="product-image">
+        <h2 class="product-name">Wildcraft Bag</h2>
+        <p class="product-description">Wildcraft Alpha Casual Standard Backpack With 3 Compartments 45L</p>
+        <!-- strike tag is used for line through text -->
+        <p class="product-price"><s>₹1,299</s>(20% off) ₹1,032</p>
+        <button class="buy-button">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <!-- product image is inserted -->
+        <img src="wildcraft3.jpg" alt="Product Image" class="product1-image">
+        <h2 class="product-name">Wildcraft Bag</h2>
+        <p class="product-description">Wildcraft 29 Ltrs Blue Standard Casual Backpack With 2 Compartments</p>
+        <!-- strike tag is used for line through text -->
+        <p class="product-price"><s>₹1,460</s> (20% off) ₹1,168</p>
+        <button class="buy-button">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <!-- product image is inserted -->
+        <img src="wildcraft4.jpg" alt="Product Image" class="product1-image">
+        <h2 class="product-name">Wildcraft Bag</h2>
+        <p class="product-description">Wildcraft 25 Ltrs pink Standard Casual Backpack With 4 Compartments</p>
+        <!-- strike tag is used for line through text -->
+        <p class="product-price"><s>₹1,500</s> (30% off) ₹1,050</p>
+        <button class="buy-button">Buy Now</button>
+    </div>
+
+
+</body>
+</html>
+<style>
+    /* internal css is being used */
+    body {
+    font-family: Arial, sans-serif;
+    /* display-flex ; The text input field will grow and shrink depending on the space available. */
+    display: flex;
+    /* justify and align-items are used to align elements to the centre */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+.product-card {
+    background-color: white;
+    /* a 1 px solid border is applied o product card */
+    border: 1px solid beige;
+    box-shadow: 0 2px 5px black;
+    max-width: 300px;
+    text-align: center;
+    padding: 16px;
+    margin-left: 3%;
+    position: relative;
+}
+
+.product-card:hover {
+    /* hover is used for a shade to appear when cursor moves upon the product card */
+    box-shadow: 0 4px 10px black;
+}
+
+.product-image {
+    width: 80%;
+}
+.product1-image{
+    width: 60%;
+}
+
+.product-name{
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.product-description {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 16px;
+}
+
+.product-price {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.buy-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.buy-button:hover {
+    background-color: lightgreen;
+}
+
+</style>
