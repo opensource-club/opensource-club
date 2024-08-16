@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <style>
+        div{
+            border:20px dotted green;
+            border-top:dotted;
+            border-left:double;
+            padding:50px;
+            margin:20px;
+            background-color: aqua;
+            margin:auto;
+            margin-bottom: 20px;
+
+        }
+        .position
+        {
+            position:absolute;
+            width:100px;
+            top:0px;
+        }
+        .dis{
+            display: inline;
+            background-color: yellow;
+            width:50px;
+        }
+        div.box{
+            padding:20px;
+            border:10px solid black;
+            margin:5px;
+        }
+        .flex-Container{
+            display:flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            background-color: red;
+            color:black;
+            margin:20px;
+        }
+
+    </style>
+    <h1>Box model</h1>
+    <div class="position">This is the content</div><!--this selector is used to create and implement several position property includes static,relative,\
+    fixed,absolute,sticky-->
+    <div>This is container 2</div>
+    <div>this is a container 3</div>
+    <div>this is container 4</div>
+    <p>Hi <span class="dis">this is Sri Ranjani</span></p><!--span is used for mark up a part of text-->
+    <hr>
+    <h1>Demonstrating flex-Container</h1>
+    <div class="flex-Container"><!--this flex is used to create responsive layout without any floating or positioning-->
+    <div class="box">This is container 5</div>
+    <div class="box">This is container 6</div>
+    <div class="box">This is container 7</div>
+    </div>
+
+
+ </body>
+ </html>
