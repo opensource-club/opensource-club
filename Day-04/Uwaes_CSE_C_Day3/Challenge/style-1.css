@@ -1,0 +1,298 @@
+*{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 1rem;
+    color: rgb(186, 229, 235);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: rgb(186, 229, 235);
+    border-bottom: 3px solid rgb(186, 229, 235);
+}
+
+@media(-width:995px){
+    nav{ 
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid rgb(186, 229, 235);
+        border-bottom: solid rgb(186, 229, 235);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: black;
+        border-top: 0.1rem solid black;
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid rgb(186, 229, 235);
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home.home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: rgb(93, 147, 154);
+}
+
+.home-content p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.home-content h1{
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    margin-right: 10rem;
+    font-weight: 800;
+    margin-top: -305rem;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+
+
+.home-img img{
+    position: relative;
+    width: 42vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid white;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+
+#title h2{
+    font-size: 4rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0rem;
+    font-weight: 400;
+    margin: 4rem;
+    padding: 10%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    color: rgb(93, 147, 154);
+}
+.social.icons a, i{
+    display: inherit;
+    width: 2rem;
+    background-color: transparent;
+    border: o.2rem solid rgb(186, 229, 235);
+    font-size: 3rem;
+    border-radius: 30%;
+    margin: 2rem 1rem 0rem 0rem;
+    margin-left: 65rem;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    color: rgb(186, 229, 235);
+    align-items: center;
+    text-align: center;
+}
+
+.social.icons a:hover{
+    color: black;
+    transform: scale(0.3) translateY();
+    background-color: rgb(186, 229, 235);
+    box-shadow: 0 0 25px rgb(186, 229, 235);
+}
+
+.btn{
+    display: inherit;
+    margin: 3rem 620rem 0rem 0rem;
+    margin-left: 58rem;
+    padding: 0.3rem 8rem;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: rgb(186, 229, 235);
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid rgb(186, 229, 235);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: rgb(186, 229, 235);
+    color: black;
+    box-shadow: 0 0 25px rgb(186, 229, 235);
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "Architecture Firm";
+    color: rgb(112, 162, 168);
+    animation: words 20s infinite;
+}
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid rgb(186, 229, 235);
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes words{
+    0%, 20%{
+        content:"Interior Designing";
+    }
+    21%, 40%{
+        content: "Commercial Building Designing";
+    }
+    41%, 60%{
+        content: "Resorts and Hotels Designing";
+    }
+    61%, 80%{
+        content: "Apartments and Group Houses Designing";
+    }
+    81%, 100%{
+        content: "Bungalow Designing";
+    }
+}
+
+
+@media(max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width: 995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home.home-control h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 15rem;
+    }
+
+    .home-content p{
+        font-size: 10rem;
+    }
+
+    .home-img img{
+        width: 70vh;
+        margin-top: 4rem;
+    }
+}
+
+
