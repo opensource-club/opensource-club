@@ -1,0 +1,141 @@
+/* Basic Reset */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; 
+}
+
+/* Header Styling */
+header {
+    background: rgba(51, 51, 51, 0.8); 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex: 1; 
+    padding: 20px;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    gap: 20px; 
+}
+
+/* Individual Card Styling */
+.card {
+    display: flex; 
+    flex-direction: column; 
+    width: 300px; 
+    border: 1px solid white;
+    border-radius: 8px;
+    background: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+/* Product Image Styling */
+.product-image {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
+}
+
+/* Product Info Section */
+.product-info {
+    padding: 15px;
+    text-align: center; 
+}
+
+.product-name {
+    font-size: 1.5rem; 
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.2rem; 
+    color: white; 
+    margin-bottom: 10px; 
+}
+
+.product-description {
+    font-size: 1rem; 
+    margin-bottom: 15px; 
+}
+
+/* Table Styling */
+.product-table {
+    width: 80%;
+    border-collapse: collapse; 
+    margin: 20px; 
+    background: #ffffe0; /* Light yellow background for the table */
+    border: 2px solid #f4c542; /* Yellow border around the table */
+    border-radius: 8px; 
+}
+
+/* Table Header Styling */
+.product-table thead {
+    background: #f4c542; /* Yellow background for header */
+    color: #fff; /* White text color for header */
+}
+
+.product-table th {
+    padding: 12px; 
+    text-align: left; 
+    border-bottom: 2px solid #ddd; 
+}
+
+/* Table Body Styling */
+.product-table tbody tr:nth-child(even) {
+    background: #fff8dc; /* Light yellow color for even rows */
+}
+
+.product-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Buy Button Styling */
+.buy-button {
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    color: #fff; 
+    background-color: #007bff; /* Blue background color */
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.buy-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styling */
+footer {
+    background: #333; 
+    color: #fff; 
+    padding: 10px;
+    text-align: center; 
+}

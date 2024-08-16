@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Wear Products</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Inline CSS for background image */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('ima.jpg') no-repeat center center fixed; 
+            /* Background image */
+            background-size: cover; 
+            /* Cover the entire background */
+            color: #333;
+             /* Dark text color */
+            display: flex;
+            flex-direction: column;
+             /* Stack header, main content, and footer vertically */
+            min-height: 100vh;
+             /* Full viewport height */
+            margin: 0; 
+            /* Remove default margin */
+        }
+
+        /* Header Styling */
+        header {
+            /* Semi-transparent dark background */
+            background: rgba(51, 51, 51, 0.8); 
+             /* White text color */
+            color: #fff;
+            padding: 20px;
+            /* Center text horizontally */
+            text-align: center; 
+        }
+
+        /* Table Styling */
+        .product-table {
+            width: 80%;
+            border-collapse: collapse; 
+            /* Center table horizontally */
+            margin: 20px auto; 
+            /* Light yellow background for the table */
+            background: #ffffe0; 
+            /* Yellow border around the table */
+            border: 2px solid #f4c542; 
+            border-radius: 8px; 
+            /* Center align text in table cells */
+            text-align: center; 
+        }
+
+        /* Table Header Styling */
+        .product-table thead {
+            /* Yellow background for header */
+            background: #f4c542; 
+            /* White text color for header */
+            color: #fff; 
+        }
+
+        .product-table th {
+            padding: 12px; 
+            border-bottom: 2px solid #ddd; 
+            font-style: italic; /* Italic font style for header cells */
+            font-weight: bold; /* Bold font weight for header cells */
+        }
+
+        /* Table Body Styling */
+        .product-table tbody tr:nth-child(even) {
+            background: #fff8dc; /* Light yellow color for even rows */
+        }
+
+        .product-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd; 
+            font-family: 'Courier New', Courier, monospace; /* Monospace font style for table cells */
+        }
+
+        /* Card Container Styling */
+        .card-container {
+            display: flex;
+            justify-content: center; /* Center the cards horizontally */
+            gap: 20px; /* Space between cards */
+        }
+
+        /* Individual Card Styling */
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            border: 1px solid white;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Slightly enlarge the card on hover */
+        }
+
+        /* Product Image Styling */
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Cover the container while maintaining aspect ratio */
+        }
+
+        /* Product Info Section */
+        .product-info {
+            padding: 15px;
+            text-align: center; /* Center text in product info */
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-family: 'Georgia', serif; /* Serif font style for product names */
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: black;
+            margin-bottom: 10px;
+            font-weight: bold; /* Bold font weight for product prices */
+        }
+
+        .product-description {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #f4c542; /* Background color on hover */
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Akash's Fashion Store</h1>
+    </header>
+
+    <div class="main-content">
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Classic Shirt</td>
+                    <td>2,999</td>
+                    <td>A stylish classic shirt for any occasion.</td>
+                </tr>
+                <tr>
+                    <td>Casual Shirt</td>
+                    <td>3,599</td>
+                    <td>Comfortable and casual for everyday wear.</td>
+                </tr>
+                <tr>
+                    <td>Formal Shirt</td>
+                    <td>1,999</td>
+                    <td>Elegant formal shirt for special occasions.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="formal.jpeg" alt="FORMAL'S" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Classic Shirt</h2>
+                <p class="product-price">2,999-4,999</p>
+                <p class="product-description">A stylish classic shirt for any occasion.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="tshirt.jpeg" alt="TSHIRTS" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Casual Shirt</h2>
+                <p class="product-price">3,599-6,999</p>
+                <p class="product-description">Comfortable and casual for everyday wear.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="flanel.jpeg" alt="FLANEL SHIRTS" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Formal Shirt</h2>
+                <p class="product-price">1,999-3,999</p>
+                <p class="product-description">Elegant formal shirt for special occasions.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Men's Fashion Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
