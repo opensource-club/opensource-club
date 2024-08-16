@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Navbar with Sticky Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #DCA47C;
+        }
+
+        /* using universal selector */
+        *{
+            color: rgb(94, 4, 4);
+        }
+
+        /* Fixed navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #cf7d42;
+            padding: 15px;
+            display: flex;
+
+            /* align the items at the end */
+            justify-content: flex-end;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 20px;
+            margin-right: 30px;
+        }
+
+    
+        /* Sticky Section using position property*/
+        .welcome {
+            position: sticky;
+            top: 0px; 
+            background-color: #d19266;
+            padding: 5px;
+            text-align: center;
+            z-index: 1001;
+            margin-top: 80px; 
+            margin-bottom: 40px;
+
+            /* for blurring purpose */
+            opacity: 0.7;
+        }
+
+        /* using display property the cards are aligned properly */
+        .cards {
+            display: flex;
+
+            /* justify property give space around each card */
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 30%;
+
+            /*  box shadow is used to style the box */
+            box-shadow: 10px 7px 5px #cb5f12;
+             /* Rounds the corners of the card */
+            border-radius: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 500px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h2 {
+            margin: 0 0 10px;
+            font-size: 22px;
+        }
+
+        .card-content p {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="navbar">
+        <a href=""> Home</a>
+        <a href=""> Products</a>
+    </div>
+
+    <!-- Sticky Welcome Section -->
+    <div class="welcome">
+        <h1>Explore Our Collection</h1>
+    </div>
+
+    <!-- Each card consists of 1 image,heading and a small description about the product -->
+    <div class="cards">
+        <div class="card">
+            <img src="https://png.pngtree.com/background/20210710/original/pngtree-fashion-high-heel-sandals-promotion-poster-picture-image_1035790.jpg" alt="Card Image 1">
+            <div class="card-content">
+                <h2>Sandal 1</h2>
+                <p> Indian footwear for its durable and affordable sandals and slippers.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://previews.123rf.com/images/pinkyone/pinkyone2207/pinkyone220700011/188805627-fashion-summer-footwear-for-woman-pastel-mint-green-sandals-shoes-and-meadow-flowers-on-bright-pink.jpg" alt="Card Image 2">
+            <div class="card-content">
+                <h2>Sandal 2</h2>
+                <p>global footwear brand offering stylish and comfortable shoes.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://us.images.westend61.de/0001782001pw/stylish-sandals-of-different-colors-with-flower-decorations-and-shoelaces-levitating-against-pink-background-ADSF42351.jpg" alt="Card Image 3">
+            <div class="card-content">
+                <h2>Sandal 3</h2>
+                <p> Modern Sandal is typically a contemporary style of footwear that combines comfort and trendy designs.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
