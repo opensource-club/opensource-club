@@ -1,0 +1,118 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Changed font for a more modern look */
+    background: linear-gradient(to right, #ffecd2, #fcb69f); /* Gradient background for the entire page */
+    margin: 0; /* Remove default margins */
+    padding: 20px; /* Add some padding around the content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    height: 100vh; /* Full viewport height */
+}
+
+.page-heading {
+    font-size: 48px; /* Larger font size for the heading */
+    margin-bottom: 30px; /* Increased bottom margin for spacing */
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark grey text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow to add depth to the text */
+}
+
+.highlight {
+    color: #ff4081; /* Highlight color for specific text */
+    padding: 5px 10px; /* Padding inside the highlighted text */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 20px; /* Rounded corners for the highlight background */
+}
+
+.product-container {
+    display: flex; /* Arrange product cards in a row */
+    flex-wrap: wrap; /* Allow product cards to wrap to the next line if necessary */
+    justify-content: center; /* Center the cards horizontally */
+    max-width: 1000px; /* Set a max width for the product container */
+    margin: auto; /* Center the container within the page */
+    backdrop-filter: blur(5px); /* Apply a subtle blur effect behind the product container */
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for each card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    overflow: hidden; /* Hide anything that goes outside the card boundaries */
+    text-align: center; /* Center the text inside the card */
+    max-width: 250px; /* Limit the width of each product card */
+    margin: 10px; /* Spacing around each card */
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Arrange the content vertically */
+    justify-content: space-between; /* Distribute space between elements inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    border: 1px solid #ddd; /* Light border for card outline */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.product-image img {
+    width: 100%; /* Make the image fit the width of the card */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.product-info {
+    padding: 15px; /* Padding around the content inside the card */
+    display: flex;
+    flex-direction: column; /* Arrange the content vertically */
+    justify-content: space-between; /* Distribute space evenly between items */
+    height: 100%; /* Ensure the product info takes up the full height */
+}
+
+.product-info h3 {
+    font-size: 20px; /* Adjust font size for the product title */
+    height: auto; /* Remove any fixed height to accommodate text */
+}
+
+.product-info .price {
+    font-size: 20px; /* Adjust font size for the price */
+}
+
+.product-info .description {
+    font-size: 14px; /* Adjust font size for the description */
+}
+
+.rating {
+    color: #ffcc00; /* Gold color for the star rating */
+    font-size: 20px; /* Font size for the stars */
+    margin-bottom: 15px; /* Bottom margin for spacing */
+}
+
+.add-to-cart {
+    background: linear-gradient(to right, #ff4081, #ff76a1); /* Gradient background for the button */
+    color: #fff; /* White text color */
+    border: none; /* Remove the default border */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 30px; /* More rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Adjust font size */
+    height: auto; /* Remove fixed height */
+    display: flex; /* Flex layout for centering content */
+    align-items: center; /* Vertically center the button text */
+    justify-content: center; /* Horizontally center the button text */
+    transition: background 0.3s ease; /* Smooth background transition on hover */
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(to right, #ff6091, #ff8db1); /* Lighter gradient effect on hover */
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center the cards */
+    }
+
+    .product-card {
+        margin-bottom: 20px; /* Add more space between cards on smaller screens */
+    }
+}
