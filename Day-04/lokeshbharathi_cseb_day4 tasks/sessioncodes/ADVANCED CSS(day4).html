@@ -1,0 +1,74 @@
+<!-- day 4 session notes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    div{
+        border: 20px solid green;
+        border-radius: 0px;/*15px for curved edge,50px for circle edges*/
+        margin: 20px;
+/*      border-top: dotted;  for the use of next exercises make it as comment
+        border-left: double;
+        margin-left: 10px;*/
+        padding: 20px;
+        background-color: aqua;
+        height:200px;
+    }
+
+    .position{
+        position: sticky;/*it will stick to the given position (eg if we give position as top=20px it will got stuck there)*/
+        top:0px;
+        width: 100px;
+    }
+
+    h1{
+        position:fixed;/* here h1 is fixed*//*fixed+will fix the div in the same place which is not able to scroll*/
+    }
+
+    .dis{
+        display:block;
+        background-color: blueviolet;
+    }
+
+    .dis2{/*for inline example*/
+        display:inline;
+        background-color: brown;
+
+    }
+
+    .flexcontainer{
+        display:flex;
+        flex-direction:column;
+    }
+
+</style>
+
+<body>
+    <h1>Box model</h1>
+    <div class="position">This is the content1</div>
+    <div>This is the content2</div>
+    <div class="position">This is the content3</div>
+    <div>This is the content4</div>
+    <div>This is the content5</div>
+    <p>This some <span class="dis" height="200px">important</span> <span class="dis">content</span> in advanced css</p>
+    <p>hi i am <span class="dis2">anas </span>i am from <span class="dis2">cse</span>department</p>
+</body>
+</html>
+<!-- css positioning -->
+ <!-- make impact on how elements are displayed and interact with each other -->
+<!-- static relative absolute fixed sticky -->
+<!-- css display example -->
+<!-- block inline inline-block none -->
+<!-- flexbox can move in more directions like row reverse column reverse */ -->
+
+<div class="flexcontainer">
+    <div>flexbox1</div>
+    <div>flexbox2</div>
+    <div>felxbox3</div>
+</div>
+<!-- https://flexboxfroggy.com/ website for fun and learn in flexbox -->

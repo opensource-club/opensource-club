@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback_form</title>
+</head>
+<body style="text-align: center;">
+    <h2><u>FEEDBACK FORM :</u></h2>
+    <form action="/submit_form"method="post">
+    <label for="name">NAME</label>
+    <input type="text"name="name" id="name"placeholder="enter your name" required><br><br><br>
+
+    <label for="contact">CONTACT</label>
+    <input type="number"name="age" id="age"placeholder="enter your contact"required><br><br><br>
+
+    <label for="email">EMAIL  </label>
+    <input type="email"name="email" id="email"placeholder="example@example.com"required><br><br><br>
+
+    <label for="birth date">BIRTH DATE</label>
+    <input type="date"name="birth date" id="birth date" required><br><br><br>
+
+    <label for="gender">GENDER:</label>
+    <input type="radio" name="gender"id="male"value="male">
+    <label for="male">MALE:</label>
+    <input type="radio" name="gender"id="female"value="female">
+    <label for="female">FEMALE:</label>
+    <input type="radio" name="gender"id="other"value="other">
+    <label for="other">OTHER:</label><br><br><br>
+
+    <label for="state">STATE:</label>
+    <select id="state" name="state">
+    <option value="tamilnadu">tamilnadu</option>
+    <option value="kerala">kerala</option>
+    <option value="andhra">andhra</option>
+    <option value="maharashtra">maharashtra</option>
+    </select><br><br><br>
+    <label for="message"> FEEDBACK:</label>
+    <textarea id="message" name="message" rows="4" cols="30" placeholder="enter our feedback here"></textarea><br><br><br>
+    <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+
+</style>
