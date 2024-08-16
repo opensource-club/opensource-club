@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Gear</title>
+    <style>
+        /* Apply basic styling to the body */
+        body {
+            font-family: Arial, sans-serif; /* Font style for the entire page */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-image: url('sportsitems.jpeg'); /* Background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent background repetition */
+            display: flex; /* Use flexbox layout */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            flex-direction: column; /* Stack children vertically */
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+            backdrop-filter: blur(5px); /* Blur background */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Style for the main container */
+        .product-page {
+            width: 90%; /* Width relative to viewport width */
+            max-width: 1200px; /* Maximum width for larger screens */
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px; /* Internal padding */
+            margin: 20px auto; /* Center container with margin for scrolling */
+        }
+
+        /* Style for the featured product section */
+        .featured-product {
+            display: flex; /* Use flexbox layout */
+            flex-wrap: wrap; /* Allow items to wrap */
+            justify-content: space-between; /* Distribute space between items */
+            overflow: hidden; /* Hide overflow content */
+            margin-bottom: 40px; /* Margin at the bottom */
+            background-color: #f0f8ff; /* Light blue background */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        /* Style for the product image */
+        .product-image img {
+            width: 100%; /* Full width */
+            max-width: 400px; /* Limit maximum width */
+            height: auto; /* Maintain aspect ratio */
+            border-right: 2px solid #1e90ff; /* Right border */
+            border-radius: 10px 0 0 10px; /* Rounded top-left and bottom-left corners */
+            object-fit: cover; /* Cover the container without stretching */
+        }
+
+        /* Style for product details */
+        .product-details {
+            padding: 20px; /* Internal padding */
+            flex: 1; /* Flex item grows to fill available space */
+            min-width: 250px; /* Minimum width */
+        }
+
+        /* Style for product heading */
+        .product-details h1 {
+            margin-top: 0; /* Remove top margin */
+            color: #333; /* Dark grey color */
+            font-size: 2em; /* Larger font size */
+        }
+
+        /* Style for star rating */
+        .star-rating {
+            font-size: 1.5em; /* Font size for stars */
+            color: #FFD700; /* Gold color */
+            margin: 10px 0; /* Vertical margin */
+        }
+
+        /* Style for product description */
+        .product-description {
+            font-size: 1em; /* Normal font size */
+            color: #777; /* Light grey color */
+            margin: 20px 0; /* Vertical margin */
+        }
+
+        /* Style for product price */
+        .product-price {
+            font-size: 2em; /* Larger font size */
+            color: #1e90ff; /* Blue color */
+            margin-bottom: 20px; /* Bottom margin */
+        }
+
+        /* Style for Add to Cart button */
+        .add-to-cart-btn {
+            background-color: #1e90ff; /* Blue background */
+            color: white; /* White text */
+            border: none; /* No border */
+            padding: 15px 30px; /* Internal padding */
+            font-size: 1.2em; /* Larger font size */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for Add to Cart button */
+        .add-to-cart-btn:hover {
+            background-color: #104e8b; /* Darker blue background */
+        }
+
+        /* Style for related products section */
+        .related-products {
+            background-color: #f0f8ff; /* Light blue background */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Internal padding */
+            margin-top: 20px; /* Margin at the top */
+        }
+
+        /* Style for related products heading */
+        .related-products h2 {
+            text-align: center; /* Centered text */
+            color: #333; /* Dark grey color */
+            margin-bottom: 20px; /* Bottom margin */
+        }
+
+        /* Grid layout for product cards */
+        .product-grid {
+            display: grid; /* Use grid layout */
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+            gap: 20px; /* Space between grid items */
+        }
+
+        /* Style for individual product cards */
+        .product-card {
+            background-color: #fff; /* White background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center; /* Centered text */
+            padding: 20px; /* Internal padding */
+            transition: transform 0.3s ease; /* Smooth transition */
+            overflow: hidden; /* Hide overflow content */
+        }
+
+        /* Hover effect for product cards */
+        .product-card:hover {
+            transform: translateY(-10px); /* Lift card up */
+        }
+
+        /* Style for product card images */
+        .product-card img {
+            width: 100%; /* Full width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        /* Style for product card headings */
+        .product-card h3 {
+            margin: 15px 0; /* Vertical margin */
+            color: #333; /* Dark grey color */
+            font-size: 1.5em; /* Larger font size */
+        }
+
+        /* Style for star rating in product cards */
+        .product-card .star-rating {
+            font-size: 1.2em; /* Slightly smaller than in featured product */
+            color: #FFD700; /* Gold color */
+            margin: 10px 0; /* Vertical margin */
+        }
+
+        /* Style for product price in product cards */
+        .product-card .product-price {
+            color: #1e90ff; /* Blue color */
+            font-size: 1.2em; /* Larger font size */
+            margin: 10px 0; /* Vertical margin */
+        }
+
+        /* Style for Add to Cart button in product cards */
+        .product-card .add-to-cart-btn {
+            background-color: #1e90ff; /* Blue background */
+            color: white; /* White text */
+            border: none; /* No border */
+            padding: 10px 20px; /* Internal padding */
+            font-size: 1em; /* Normal font size */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for Add to Cart button in product cards */
+        .product-card .add-to-cart-btn:hover {
+            background-color: #104e8b; /* Darker blue background */
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container for the product page -->
+    <div class="product-page">
+        <!-- Featured product section -->
+        <div class="featured-product">
+            <!-- Container for the product image -->
+            <div class="product-image">
+                <img src="soccerball.png" alt="Premium Soccer Ball">
+            </div>
+            <!-- Container for product details -->
+            <div class="product-details">
+                <h1>Premium Soccer Ball</h1> <!-- Product title -->
+                <div class="star-rating">★★★★★</div> <!-- Star rating -->
+                <p class="product-description">This top-of-the-line soccer ball is perfect for both professional matches and casual games. Made with high-quality materials, it offers durability, excellent grip, and precision in every kick.</p> <!-- Product description -->
+                <div class="product-price">$49.99</div> <!-- Product price -->
+                <button class="add-to-cart-btn">Add to Cart</button> <!-- Add to Cart button -->
+            </div>
+        </div>
+
+        <!-- Related products section -->
+        <div class="related-products">
+            <h2>Related Products</h2> <!-- Section heading -->
+            <!-- Grid layout for related products -->
+            <div class="product-grid">
+                <!-- Product card 1 -->
+                <div class="product-card">
+                    <img src="basketball.png" alt="Professional Basketball">
+                    <h3>Professional Basketball</h3>
+                    <div class="star-rating">★★★★☆</div>
+                    <p class="product-price">$39.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <!-- Product card 2 -->
+                <div class="product-card">
+                    <img src="tennis-racket.png" alt="Tennis Racket">
+                    <h3>Tennis Racket</h3>
+                    <div class="star-rating">★★★★★</div>
+                    <p class="product-price">$79.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <!-- Product card 3 -->
+                <div class="product-card">
+                    <img src="running-shoes.png" alt="Running Shoes">
+                    <h3>Running Shoes</h3>
+                    <div class="star-rating">★★★★☆</div>
+                    <p class="product-price">$99.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <!-- Product card 4 -->
+                <div class="product-card">
+                    <img src="yogamat.png" alt="Yoga Mat">
+                    <h3>Yoga Mat</h3>
+                    <div class="star-rating">★★★★★</div>
+                    <p class="product-price">$29.99</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
