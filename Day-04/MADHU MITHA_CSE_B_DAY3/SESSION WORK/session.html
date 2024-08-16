@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General style for div elements */
+        div {
+            border: 20px solid green; /* Solid border with 20px width */
+            border-top: 20px dotted green; /* Dotted border on top */
+            border-left: 20px solid double; /* Double border on the left */
+            border-right: 20px solid double; 
+            padding: 50px; /* Padding inside the div */
+            margin: 20px; /* Margin outside the div */
+            background-color: aqua; /* Background color */
+            margin-bottom: 20px;
+        }
+
+        /* Sticky positioning for specific elements */
+        .position {
+            position: sticky; /* Sticky positioning to stick the element at the top of the viewport */
+            width: 100px; /* Fixed width */
+            top: 0; /* Sticks to the top */
+        }
+
+        /* Inline display styling */
+        .dis {
+            display: inline; /* Inline display, no line breaks */
+            background-color: rgb(30, 210, 216); /* Background color */
+            width: 50px; /* Fixed width */
+        }
+
+        /* Style for box elements inside a flex container */
+        div.box {
+            padding: 20px; /* Padding inside the box */
+            border: 10px solid black; /* Border around the box */
+            margin: 5px; /* Margin around the box */
+        }
+
+        /* Flex container styling */
+        .flex-Container {
+            display: flex; /* Flexbox layout */
+            flex-direction: row-reverse; /* Reverse order of items */
+            justify-content: center; /* Center items horizontally */
+            background-color: red; /* Background color */
+            color: black; /* Text color */
+            margin: 20px; /* Margin around the container */
+            padding: 10px; /* Padding inside the container */
+            flex-wrap: wrap; /* Allows wrapping of items to the next line */
+        }
+
+        /* Inline-block container styling */
+        .inline-container {
+            display: inline-block; /* Inline-block display for alignment in a line */
+            padding: 10px; /* Padding inside the container */
+            margin: 5px; /* Margin around the container */
+            background-color: lightcoral; /* Background color */
+        }
+
+        /* Inline-block item styling */
+        .inline-block-item {
+            display: inline-block; /* Inline-block display for alignment in a line */
+            padding: 10px; /* Padding inside the item */
+            margin: 5px; /* Margin around the item */
+            background-color: lightseagreen; /* Background color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <div>This is the content</div> <!-- General div with various border styles and background color -->
+    <div>This is the content 2</div> <!-- Another div with similar styles -->
+    <div class="position">This is content 3</div> <!-- Sticky positioned div -->
+    <div>This is container 4</div> <!-- Default styled div -->
+    <p>Hi <span class="dis">opensource club</span></p> <!-- Inline span with background color -->
+
+    <hr> <!-- Horizontal rule for section separation -->
+
+    <h1>Demonstrating Flex Container</h1>
+    <div class="flex-Container">
+        <div class="box">This is container 5</div> <!-- Box element within flex container -->
+        <div class="box">This is container 6</div> 
+        <div class="box">This is container 7</div> 
+        <div class="box">This is container 8</div> 
+        <div class="box">This is container 9</div> 
+    </div>
+
+    <h1>Demonstrating Inline and Inline-Block</h1>
+    <div class="inline-container">Inline Container 1</div> <!-- Inline-block container -->
+    <div class="inline-container">Inline Container 2</div> 
+    <div class="inline-container">Inline Container 3</div> 
+    <div class="inline-container">Inline Container 4</div> 
+    <div class="inline-container">Inline Container 5</div>
+
+    <hr> <!-- Horizontal rule for section separation -->
+
+    <div class="flex-Container">
+        <div class="inline-block-item">Inline-Block Item 1</div> <!-- Inline-block item within flex container -->
+        <div class="inline-block-item">Inline-Block Item 2</div>
+        <div class="inline-block-item">Inline-Block Item 3</div> 
+    </div>
+</body>
+</html>
