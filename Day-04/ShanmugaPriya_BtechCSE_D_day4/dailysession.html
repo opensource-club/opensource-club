@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!-- implemenatation of box model ,position,display,flex properties-->
+    <style> 
+        .boxmodel{
+            background-color: red; 
+            margin: 20px;
+            padding: 50px;
+            border-color: brown;
+            border-radius: 8px;
+            border-right: 6px;
+            border-style: solid;
+        }
+        .position{
+            background-color: blue;
+            .box1{
+                margin-bottom: 50px;
+                position: relative;
+                left: 20px;
+            }
+            
+        }
+        
+        .absolute{
+            position: absolute;
+        }
+        .fixed{
+            position: fixed;
+        }
+        .sticky{
+            position: sticky;
+
+        }
+        .inline{
+            display: inline;
+        }
+        .inline-block{
+            display: inline-block;
+        }
+        .block{
+            display: block;
+        }
+        .none{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxmodel"> 
+    <h1>Hello</h1><!-- implemenatation of box model-->
+    <h1>Welcome</h2>
+    </div>
+    <div class="position"><!-- implemenatation of positioning -->
+        <h1 class="box1">hello</h1><br>
+        <h4>welcome</h1><br><!-- implemenatation of positioning of relative  -->
+        <h1>Web development</h1>
+
+    </div>
+    <div class="absolute"><!-- implemenatation of positioning -->
+        <h1 class="box2">hello</h1><br>
+        <h4>welcome</h1><br><!-- implemenatation of positioning of absolute  -->
+        <h1>Web development</h1>
+
+    </div><div class=" fixed"><!-- implemenatation of positioning -->
+        <h1 class="box3">hello</h1><br>
+        <h4>welcome</h1><br><!-- implemenatation of positioning of  fixed -->
+        <h1>Web development</h1>
+        <div class=" sticky"><!-- implemenatation of positioning -->
+            <h1 class="box1">hello</h1><br>
+            <h4>welcome</h1><br><!-- implemenatation of positioning of stickey -->
+            <h1>Web development</h1>
+    
+        </div>
+
+    </div>
+    <div class="display"><!-- implemenatation of display property-->
+        <h1 class="inline">hello</h1><!-- implemenatation of inline property-->
+        <h2 class="inline-block">Welcome</h2><!-- implementation of inline block -->
+        <h3 class="block">Computer Science</h3><!-- implementation of block -->
+        <p class="none">Web Development</p><!-- implementation of none property  -->
+
+    </div>
+</body>
+</html>
