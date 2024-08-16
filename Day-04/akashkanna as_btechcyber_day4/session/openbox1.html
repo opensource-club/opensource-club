@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Open Boxes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #e0e0e0; /* Light gray background for contrast */
+            font-family: Arial, sans-serif; /* Clean font for better readability */
+        }
+
+        .container {
+            display: flex;
+            gap: 20px; /* Space between boxes */
+        }
+
+        .box {
+            width: 150px; /* Increased size for better content fit */
+            height: 150px; /* Increased size for better content fit */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-width: 5px;
+            border-style: solid;
+            box-sizing: border-box;
+            color: #fff; /* White text color for contrast */
+            font-size: 16px; /* Increased font size */
+            font-weight: bold; /* Bold text for emphasis */
+            text-align: center; /* Center text alignment */
+            padding: 10px; /* Padding inside the box */
+            border-radius: 10px; /* Rounded corners for a modern look */
+        }
+
+        .red {
+            border-color: red;
+            background-color: #ffcccc; /* Light red background */
+        }
+
+        .green {
+            border-color: green;
+            background-color: #ccffcc; /* Light green background */
+        }
+
+        .blue {
+            border-color: blue;
+            background-color: #ccccff; /* Light blue background */
+        }
+
+        .box span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red">
+            <span>Red Box</span>
+        </div>
+        <div class="box green">
+            <span>Green Box</span>
+        </div>
+        <div class="box blue">
+            <span>Blue Box</span>
+        </div>
+    </div>
+</body>
+</html>
+

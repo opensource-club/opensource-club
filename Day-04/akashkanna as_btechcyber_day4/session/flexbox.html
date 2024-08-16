@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Styled Boxes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5; /* Light background for better contrast */
+            font-family: Arial, sans-serif; /* Clean font */
+        }
+
+        .container {
+            display: flex;
+            gap: 20px; /* Space between boxes */
+            flex-wrap: wrap; /* Allows wrapping for responsiveness */
+            justify-content: center; /* Center boxes in container */
+        }
+
+        .box {
+            width: 200px; /* Set width of the boxes */
+            height: 250px; /* Set height of the boxes */
+            display: flex;
+            flex-direction: column; /* Arrange content vertically */
+            justify-content: space-between; /* Space out content */
+            align-items: center; /* Center content horizontally */
+            padding: 20px; /* Padding inside the boxes */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            color: #333; /* Dark text color for readability */
+            text-align: center; /* Center text */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        .red {
+            background-color: #ffebeb; /* Light red background */
+            border: 2px solid #ff4d4d; /* Red border */
+        }
+
+        .green {
+            background-color: #e8f5e9; /* Light green background */
+            border: 2px solid #4caf50; /* Green border */
+        }
+
+        .blue {
+            background-color: #e3f2fd; /* Light blue background */
+            border: 2px solid #2196f3; /* Blue border */
+        }
+
+        .box h2 {
+            margin: 0 0 10px 0; /* Margin below heading */
+            font-size: 20px; /* Font size for heading */
+        }
+
+        .box p {
+            margin: 0 0 20px 0; /* Margin below paragraph */
+            font-size: 14px; /* Font size for paragraph */
+        }
+
+        .box button {
+            padding: 10px 20px; /* Padding inside the button */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners for button */
+            background-color: #ffffff; /* Button background color */
+            color: #333; /* Button text color */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 14px; /* Font size for button text */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        .box button:hover {
+            background-color: #f0f0f0; /* Change background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red">
+            <h2>Red Box</h2>
+            <p>This is some content inside the red box. It demonstrates Flexbox layout.</p>
+            <button>Click Me</button>
+        </div>
+        <div class="box green">
+            <h2>Green Box</h2>
+            <p>This green box contains a heading, some text, and a button.</p>
+            <button>Click Me</button>
+        </div>
+        <div class="box blue">
+            <h2>Blue Box</h2>
+            <p>The blue box also showcases Flexbox properties and styling.</p>
+            <button>Click Me</button>
+        </div>
+    </div>
+</body>
+</html>
