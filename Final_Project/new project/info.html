@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Timeline & Team</title>
+    <style>
+        /* Base styles for the page */
+        body {
+            background-color: #FFF7E6; /* Example background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #F6B543; /* Header background color */
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        /* Navigation bar styles */
+        nav {
+            background-color: #ce9738; /* Nav background color */
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        /* Timeline section styles */
+        .timeline {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* Content background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline h2 {
+            color: #F0A6B4;
+            border-bottom: 2px solid purple;
+            padding-bottom: 5px;
+        }
+
+        .timeline h3 {
+            color: #30336B;
+        }
+        
+        .timeline div {
+            margin-bottom: 20px;
+        }
+
+        /* Image styles in the timeline */
+        .timeline img {
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: 10px auto;
+        }
+        
+        /* Carousel container */
+        .carousel {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .carousel img.active {
+            opacity: 1;
+        }
+
+        /* Team section styles */
+        .team-section {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F0A6B4;
+            color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-section h2 {
+            color: #30336B;
+        }
+        
+        .team-member {
+            margin-bottom: 15px;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #fa4768;
+            color: #F0A6B4;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        header .logo {
+            height: 15vh;
+            margin-left: 5px;
+        }
+        header h1{
+            text-align: left;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Crescent logo" class="logo">
+        </div>
+        <h1>BOOTCAMP</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        
+        <a href="website.html">Home</a>
+    </nav>
+    <!--CAPTION-->
+    <center>
+    <caption class="center-header"><h1 style="color: blue;">5 DAYS boot camp on HTML and CSS</h1></caption>
+</center>
+
+    <!-- Timeline Section -->
+    <div class="timeline">
+        <h2>Timeline: 12/08 to 18/08</h2>
+
+        <!-- Timeline Entry for 12/08 -->
+        <div>
+            <h3>12/08 - Day 1: Introduction to Basic HTML</h3>
+            <p>
+                On the first day, the session started with an introduction to basic HTML elements such as 
+                <code>&lt;form&gt;</code>, <code>&lt;container&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;list&gt;</code>, 
+                and <code>&lt;anchor&gt;</code> tags. Real-time examples were provided to demonstrate how these elements work. 
+                <strong>The challenge given was to create a resume using these basic HTML components.</strong>
+            </p>
+        </div>
+
+        <!-- Day 2 -->
+        <div>
+            <h3>13/08 - Day 2: Advanced HTML Concepts</h3>
+            <p>
+                On the second day, the focus shifted to more advanced HTML elements like 
+                <code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code>, and the <code>&lt;table&gt;</code> element 
+                along with their attributes. <strong>The challenge was to create a form and a table incorporating these advanced HTML features.</strong>
+            </p>
+        </div>
+
+        <!-- Day 3 -->
+        <div>
+            <h3>14/08 - Day 3: Introduction to CSS</h3>
+            <p>
+                Day three introduced the basics of CSS, including coloring, arranging elements, and linking stylesheets to HTML. 
+                <strong>The challenge for the day was to decorate a table horizontally and diagonally and create a simple website with two buttons: 
+                one for switching to light mode and another for dark mode.</strong>
+            </p>
+        </div>
+
+        <!-- Day 4 -->
+        <div>
+            <h3>15/08 - Day 4: Understanding Box Model and Flexbox</h3>
+            <p>
+                On the fourth day, the training covered the box model and flexbox in-depth, from basics to advanced concepts. 
+                <strong>The day's challenge was to create a web page using the box model and flexbox for layout.</strong>
+            </p>
+        </div>
+
+        <!-- Day 5 -->
+        <div>
+            <h3>16/08 - Day 5: Introduction to Bootstrap</h3>
+            <p>
+                The final day introduced Bootstrap and its components for rapid web development. 
+                <strong>The challenge was to create a complete website for the club using Bootstrap, incorporating what was learned throughout the week.</strong>
+            </p>
+        </div>
+    </div>
+
+    <!-- Image Carousel Section -->
+    <div class="carousel">
+        <img src="day1.jpg" alt="Project Image 1" class="active">
+        <img src="day-5.jpg" alt="Project Image 2">
+        <img src="day-2.jpg" alt="Project Image 3">
+    </div>
+
+    <!-- Team Section -->
+    <div class="team-section">
+        <h2>Meet Our Lecturers</h2>
+
+        <!-- Lecturers -->
+        <div class="team-member">
+            <h3>Day 1: Afroz</h3>
+        </div>
+        <div class="team-member">
+            <h3>Day 2: Tharagaram</h3>
+        </div>
+        <div class="team-member">
+            <h3>Day 3: Joshita & Aafiya</h3>
+        </div>
+        <div class="team-member">
+            <h3>Day 4: Ushasi</h3>
+        </div>
+        <div class="team-member">
+            <h3>Day 5: Jhaasim</h3>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sadiq's Website. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Carousel -->
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.carousel img');
+
+        function changeImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
+        }
+
+        setInterval(changeImage, 3000); // Change image every 3 seconds
+    </script>
+
+</body>
+</html>
