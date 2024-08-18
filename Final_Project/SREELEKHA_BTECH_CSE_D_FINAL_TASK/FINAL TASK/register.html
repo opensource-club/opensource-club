@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag to define the character encoding of the document -->
+    <meta charset="UTF-8">
+    <!-- Meta tag for responsive design, making the page adapt to different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage shown in the browser tab -->
+    <title>Register - Crescent Open Source Club</title>
+    
+    <!-- Link to external CSS file for styling the page -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="register-page">
+
+    <!-- Header Section -->
+    <header>
+        <!-- Main heading for the Register page -->
+        <h1>Register</h1>
+        
+        <!-- Club logo image aligned to the right -->
+        <img src="logo.png" alt="Club Logo" class="logo-right">
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Secondary heading for the registration form -->
+        <h2>Register for the Crescent Open Source Club</h2>
+        
+        <!-- Registration form for new members -->
+        <!-- Action attribute points to the backend script (submit_registration.php) to handle the form data -->
+        <!-- Method 'post' is used to securely send the form data -->
+        <form action="submit_registration.php" method="post">
+            <!-- Input field for user to enter their name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <!-- Input field for user to enter their email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- Input field for user to enter their password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <!-- Input field for user to confirm their password -->
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            
+            <!-- Submit button to send the form data -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Footer content can be added here -->
+    </footer>
+
+</body>
+</html>

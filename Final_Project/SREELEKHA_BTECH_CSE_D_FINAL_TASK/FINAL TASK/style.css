@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Set font style for the body */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Set background color to light grey */
+    color: #333; /* Set text color to dark grey */
+}
+
+header {
+    background-color: #333; /* Set header background to dark grey */
+    color: white; /* Set header text color to white */
+    text-align: center; /* Center-align the text inside the header */
+    padding: 80px; /* Add padding to the header */
+    position: relative; /* Set position for potential absolute children */
+    display: flex; /* Use flexbox to align content */
+    align-items: center; /* Vertically center the header content */
+    justify-content: space-between; /* Space out content within the header */
+}
+
+header h1 {
+    margin: 0; /* Remove default margins from h1 */
+    flex: 1; /* Let the heading take available space in the flex container */
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style-type: none; /* Remove default bullet points from the list */
+    padding: 0; /* Remove padding from list */
+    margin: 0; /* Remove margins */
+    display: flex; /* Use flexbox to arrange the menu items horizontally */
+    justify-content: center; /* Center-align the menu items */
+    background-color: #333; /* Set background color to dark grey */
+}
+
+.nav-menu li {
+    padding: 15px 20px; /* Add padding around each menu item */
+}
+
+.nav-menu li a {
+    color: white; /* Set link text color to white */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.1em; /* Increase font size slightly */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative; /* Set relative position for dropdown container */
+    display: inline-flex; /* Align dropdown content inline with other items */
+}
+
+.dropdown-content {
+    display: none; /* Hide the dropdown content by default */
+    position: absolute; /* Position dropdown content absolutely below the dropdown trigger */
+    background-color: #f9f9f9; /* Set background color to light grey */
+    min-width: 160px; /* Set a minimum width for the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow to dropdown for depth */
+    z-index: 1; /* Ensure dropdown appears on top of other elements */
+}
+
+.dropdown-content li {
+    text-align: left; /* Align the text to the left */
+    padding: 12px 16px; /* Add padding around each dropdown item */
+    border-bottom: 1px solid #ddd; /* Add a border between items */
+}
+
+.dropdown-content li a {
+    color: black; /* Set link color to black */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make the link take full width of its container */
+}
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1; /* Change background on hover for better visibility */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content when hovering over the dropdown */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Set background color to dark grey */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align the footer text */
+    padding: 10px 0; /* Add padding above and below the footer content */
+}
+
+/* About Us Page Styles */
+.about-us-page {
+    background: url('bg.jpg') no-repeat center center fixed; /* Set background image and position it */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    color: white; /* Set default text color to white */
+    padding: 50px 20px; /* Add padding to ensure content doesn't touch the edges */
+    display: flex; /* Use flexbox to arrange the content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the content fills the full height of the viewport */
+}
+
+.about-us-page .content {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a white background with slight transparency */
+    color: black; /* Set text color to black */
+    padding: 30px; /* Add padding around the content */
+    border-radius: 10px; /* Round the corners of the content box */
+    max-width: 800px; /* Set a maximum width for the content box */
+    width: 100%; /* Ensure the content box takes full width of the parent */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    text-align: center; /* Center-align the text inside the content box */
+}
+
+.about-us-page h2 {
+    margin-top: 0; /* Remove top margin from the h2 element */
+}
+
+.about-us-page .why-osc {
+    display: flex; /* Use flexbox to arrange content horizontally */
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 20px; /* Add space above the section */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.about-us-page .why-osc img {
+    max-width: 100px; /* Set a maximum width for images */
+    height: auto; /* Ensure images maintain their aspect ratio */
+    margin: 0 10px; /* Add margin to the left and right of each image */
+}
+
+/* Responsive Adjustments for About Us Page */
+@media (max-width: 768px) {
+    .about-us-page .why-osc {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .about-us-page .why-osc img {
+        margin-bottom: 20px; /* Add space below the image */
+    }
+}
