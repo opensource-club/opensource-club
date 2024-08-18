@@ -1,0 +1,562 @@
+/* Global Styles */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 0;
+    position: relative; /* Ensure header is relative to allow for image placement */
+}
+
+.hello {
+    color: #fff;
+}
+
+.logo img {
+    width: 700px;
+    margin-left: 600px;
+    border-radius: 20px;
+}
+
+.logo h1 {
+    display: inline;
+    margin-left: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.right-logo img {
+    width: 500px;
+    margin-right: 900px;
+    margin-top: -500px;
+}
+
+/* Enhanced Navigation Bar */
+nav {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    padding: 25px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    position: fixed; /* Fix the navbar position */
+    top: 0; /* Aligns the navbar to the top */
+    left: 0; /* Ensure the navbar spans the full width */
+    right: 0; /* Ensure the navbar spans the full width */
+    z-index: 999; /* Layer above content */
+    margin: 0; /* Reset margin to avoid shifting */
+}
+
+/* Ensure content starts below the navbar */
+body {
+    margin-top: 80px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Sections */
+section {
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Home Section with Side-by-Side Layout */
+/* Home Section Background */
+#home {
+    background-image: url('homebg.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 50px 20px; /* Adjust padding as needed */
+    color: #fff; /* Ensures text is readable on top of the background image */
+}
+#home .home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 100%; /* Ensure the container does not exceed the viewport width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 0 auto;
+   
+}
+
+#home .intro {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 100%; /* Ensure the content does not exceed the viewport width */
+    text-align: left;
+    font-size: 20px;
+}
+
+#home .intro-image {
+    flex: 1;
+    text-align: right;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: left;
+    gap: 20px; /* Space between logos */
+    margin-bottom: 10px; /* Space below logos */
+}
+
+.social-link {
+    display: inline-block;
+}
+
+.social-icon {
+    width: 40px; /* Size of the logo */
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+    box-shadow: 
+    0 0 5px rgb(255, 187, 0),
+    0 0 25px rgb(255, 187, 0),
+    0 0 50px rgb(255, 187, 0),
+    0 0 100px rgb(255, 187, 0),
+    0 0 200px rgb(255, 187, 0);
+     /* Slight transparency on hover */
+}
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    box-shadow: 
+    0 0 5px rgb(255, 187, 0),
+    0 0 25px rgb(255, 187, 0),
+    0 0 50px rgb(255, 187, 0),
+    0 0 100px rgb(255, 187, 0),
+    0 0 200px rgb(255, 187, 0);
+
+}
+
+/* Intro Image */
+.intro-image {
+    text-align: center; /* Center the image */
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#home .intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#home .intro p {
+    line-height: 1.6;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: rgb(242, 19, 186);
+}
+.bx {
+    font-family: boxicons !important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    box-shadow: 
+        0 0 5px rgb(255, 208, 0),
+        0 0 25px rgb(255, 208, 0),
+        0 0 50px rgb(255, 208, 0),
+        0 0 100px rgb(255, 208, 0),
+        0 0 250px rgb(255, 208, 0);
+}
+
+/* Parallax Sections */
+
+#join {
+    background: url('join.webp') no-repeat center center ;
+    background-size: cover;
+}
+.parallax .content {
+  
+    border-radius: 10px;
+}
+
+/* Activity Cards */
+.activity-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    /* Allow wrapping of cards if necessary */
+}
+#activities {
+    background: linear-gradient(#eff61a, #f24d84);
+
+}
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;  /* Include padding and border in the element's total width and height */
+}
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow:    
+    0 0 5px rgb(6, 255, 251),
+    0 0 25px rgb(6, 255, 251),
+    0 0 50px rgb(6, 255, 251),
+    0 0 100px rgb(6, 255, 251); /* Glowing effect */
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+
+.calendar-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.calendar-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.calendar-card {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+    position: relative; /* Needed for the glow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the glow effect */
+}
+.calendar-card:hover {
+    transform: translateY(-15px);
+    box-shadow:    
+    0 0 5px rgb(6, 255, 251),
+    0 0 25px rgb(6, 255, 251),
+    0 0 50px rgb(6, 255, 251),
+    0 0 100px rgb(6, 255, 251); /* Glow effect on hover */
+
+}
+
+.calendar-card h3 {
+    margin-top: 0;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+}
+
+.day-label {
+    background-color: #fd70c7;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.day {
+    padding: 15px;
+    text-align: center;
+}
+.day-label, .day {
+    border: 1px solid black; /* Set border color to black */
+    box-sizing: border-box;
+    background-color: rgb(238, 165, 248);
+}
+
+.blank {
+    background-color: #be9ff2;
+}
+
+.bootcamp {
+    background-color: #ffeb3b;
+}
+
+.day:nth-child(7n+1) {
+    color: red;
+}
+#events {
+    background-image: url("calender.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 20px; /* Adjust padding as needed */
+    /* Text color for better visibility on the background image */
+}
+
+.team-background {
+    background-color: #f4f4f4; /* Light background color for the section */
+    padding: 60px 0; /* Padding for the section */
+    text-align: center;
+}
+
+
+.team-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.team-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space between cards */
+
+    padding: 0 10px; /* Padding to prevent overflow */
+}
+
+.team-card {
+    flex: 0 0 300px; /* Fixed width for each card */
+    margin: 0 10px; /* Margin between cards */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.team-card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.team-card p {
+    margin: 0;
+    color: #555;
+}
+
+.team-card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    transform: translateY(-15px);
+    box-shadow:    
+    0 0 5px rgb(6, 255, 251),
+    0 0 25px rgb(6, 255, 251),
+    0 0 50px rgb(6, 255, 251),
+    0 0 100px rgb(6, 255, 251); /* Increase shadow on hover */
+}
+#team-section {
+    background-image: url("teamwork.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-wrapper {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center;
+    }
+
+    .team-card {
+        flex: 0 0 auto; /* Auto width for stacked cards */
+        margin: 10px 0; /* Margin for stacked cards */
+    }
+}
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contact-details {
+    flex: 1;
+    max-width: 400px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.contact-details h2 {
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+.contact-details a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+
+
+.contact-form {
+    flex: 2;
+    max-width: 800px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ef7f4;
+}
+#contact {
+    background:linear-gradient(#eab2f7, #fba4c3);
+   
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
