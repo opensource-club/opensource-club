@@ -1,0 +1,164 @@
+* {             /*styling applied to whole pages*/
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style:none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+
+}
+body{                     /*style for body elements*/
+background-color: black;
+background-image: url(y0LB09.gif);
+background-repeat: no-repeat;
+background-size: cover;
+height:700px;
+width:100%;
+}
+a{
+    color:#fff;
+    font-size: 1rem;
+}
+a:hover{
+color: orange;
+}
+header{
+    position: relative;
+    padding:0 2rem;
+
+}
+.navbar{         /*styling applied for the elements in header*/
+    width:100%;
+    height:60px;
+    max-width: 1200px ;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{     
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .links{
+    display: flex;
+    gap:2rem;
+}
+.action_btn{                      /*styling applied to action button*/
+    background-color: orange;
+    color:#fff;
+    padding:0.5rem 1rem;
+    outline:none;
+    border:none;
+    border-radius: 12px;
+    font-size:1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.action_btn:hover{
+    color:#fff;
+    scale:1.05;
+}
+.action_btn:active{            /* the active selector is used to select and style the active link*/
+    scale:0.8;                   /*this property allow to change the size of elements*/
+}
+
+/* TO add responsive design*/
+
+@media (max-width: 992px) {     /*the media is used in media queries to apply different styles for different media types/devices*/
+    .navbar .links,
+    .navbar .action_btn
+}
+.content{
+    text-align: center;
+    color:#fff
+}
+.content h1{
+    font-size: 4rem;
+    color:#fff;
+    font-weight: bold;
+    padding:5px;
+}
+h2{
+    padding:5px;
+    font-family: 'poppins', sans-serif;
+    font-size: 3rem;
+    position: relative;
+    text-align: center;
+
+}
+h2::before{
+    content:attr(data-text);
+    position:absolute;
+    top:0;
+    text-align: center;
+    color:orange;
+    overflow:hidden;
+    animation:animate 2s linear infinite;   /*an animation let an element gradually change from one style to another*/
+}
+@keyframes animate {    /* this rules allow the animation to gradually change to the current style to the new style for certain/infinite no of times*/
+     0%{width: 20%;}
+     50%{width:30%}
+ }
+.para_1{
+    font-size: 20px;
+    color:#fff;
+    padding: 50px;
+    text-align:center;
+}
+.btns{
+    align-items: center;
+    justify-content: center;
+    margin-left:600px;
+}
+.btn{
+    color:orange;
+    background-color: orange;
+    padding:15px 30px;
+    font-size: 18px;
+    outline: none;
+    position:relative;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+
+
+}
+.btn::after{                            /*the before selector inserts something after the content of each selected element*/
+    width:100%;
+    height:100%;
+    content: "";
+    position:absolute;
+    z-index: -1;
+    background-color: #fff;
+    left:0;
+    top:0;
+    border-radius: 10px;
+}
+.btn::before{                                  /*the before selector inserts something before the content of each selected element*/
+    content:"";
+    background:linear-gradient(
+     45deg,
+     #ff0000, #fff,#fffb00,#ff00cb,#00ffd5,#002bff
+     );
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    background-size: 600%;
+    z-index:-1;
+    width:calc(100%);
+    height:calc(100%);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    opacity:1;
+
+}
+@keyframes glowing {
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+}
