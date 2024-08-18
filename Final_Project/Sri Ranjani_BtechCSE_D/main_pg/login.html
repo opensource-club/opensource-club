@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style_login.css"><!--adding styles uding external css(style_login)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--link which has different font styles-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main"><!--main container box which has form details-->
+        <input type="checkbox" id="chk" aria-hidden="true">
+        
+        <div class="signup"><!--this tag contain details regd signup details-->
+
+            <form action="/">
+               
+                <label for="chk" aria-hidden="true">Sign Up</label><!--area-hiden--an attribute which is used to hide elements visually -->
+                <input type="text" name="txt" placeholder="User name" required>
+                <input type="email" name="email" placeholder="Email-Id" required>
+                <input type="password" name="Password" placeholder="Password" required>
+                <button>sign up</button>
+            </form>
+        </div>
+        <div class="login"><!--this tag contain details regd login details -->
+            <form action="/">
+                <label for="chk" aria-hidden="true">Login</label><!--area-hiden--an attribute which is used to hide elements visually -->
+                <input type="email" name="email" placeholder="Email-Id" required>
+                <input type="password" name="Password" placeholder="Password" required>
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+
+                    
+
+</body>
+</html>
