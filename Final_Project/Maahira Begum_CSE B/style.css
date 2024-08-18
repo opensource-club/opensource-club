@@ -1,0 +1,203 @@
+/* General body styling */
+body {
+  background-image: url("bg.jpg"); /* Background image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+  color: #fff; /* Default text color */
+  font-family: 'Roboto', sans-serif; /* Font for the page */
+}
+
+/* Navbar styling */
+.navbar {
+  background: rgba(125, 79, 202, 0.9); /* Purple background with transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.navbar-brand img {
+  filter: drop-shadow(2px 4px 6px black); /* Shadow effect on the logo */
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+  font-weight: bold; /* Bold text for links */
+  color: #fff; /* White text color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700; /* Yellow color on hover */
+}
+
+/* Heading styling */
+h2 {
+  font-size: 36px; /* Font size for headings */
+  font-weight: 700; /* Bold font weight */
+  margin: 20px 0; /* Margin above and below the heading */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1.5px; /* Letter spacing */
+  color: #ffd700; /* Yellow color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect on text */
+}
+
+/* Paragraph styling */
+p {
+  color: #000; /* Black text color */
+  font-size: 18px; /* Font size for paragraphs */
+  line-height: 1.6; /* Line height for readability */
+  text-align: center; /* Center-align text */
+  margin: 0 auto 20px auto; /* Center-align with margin at the bottom */
+  max-width: 800px; /* Maximum width for better readability */
+  padding: 0 20px; /* Padding for better spacing */
+}
+
+/* Projects and Events sections styling */
+.projects-section, .events-section {
+  width: 100%; /* Full width */
+  text-align: center; /* Center-align text */
+  padding: 0 10px; /* Padding for container */
+}
+
+.projects-section {
+  margin-bottom: 50px; /* Space below the projects section */
+}
+
+.projects-section h2, .events-section h2 {
+  margin-bottom: 20px; /* Space between heading and flex container */
+}
+
+/* Flex container for projects and events */
+.project-container, .event-container {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Wrap items if necessary */
+  gap: 10px; /* Space between flex items */
+}
+
+/* Individual project and event items */
+.project-item, .event-item {
+  flex: 1; /* Flex-grow to occupy available space */
+  max-width: 300px; /* Maximum width of items */
+  background-color: rgba(255, 255, 255, 0.7); /* White background with transparency */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  padding: 20px; /* Padding inside items */
+  text-align: center; /* Center-align text */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.project-item img, .event-item img {
+  max-width: 100%; /* Make image fit the container */
+  border-radius: 5px; /* Rounded corners for images */
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+.project-item:hover, .event-item:hover {
+  transform: translateY(-10px); /* Lift item on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
+}
+
+/* Contact section styling */
+.contact-section {
+  margin-bottom: 20px; /* Space below the contact section */
+}
+
+.contact-section a img {
+  margin: 0 10px; /* Space between social media icons */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-section a img:hover {
+  transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+/* Join Us section styling */
+.join-section table {
+  max-width: 500px; /* Maximum width of the table */
+  margin: 0 auto; /* Center-align table */
+  background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+  padding: 20px; /* Padding inside the table */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.join-section td {
+  padding: 10px; /* Padding inside table cells */
+  border: none; /* No border for table cells */
+  text-align: left; /* Left-align text in table cells */
+  color: #333; /* Dark text color */
+  font-size: 18px; /* Increased font size for labels */
+}
+
+.join-section input, .join-section button {
+  width: 100%; /* Full width for inputs and button */
+  padding: 10px; /* Padding inside inputs and button */
+  margin-top: 10px; /* Margin on top */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* No border */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.join-section input {
+  font-size: 18px; /* Increased font size for input fields */
+}
+
+.join-section button {
+  background-color: #7d4fca; /* Purple background */
+  color: white; /* White text color */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.join-section button:hover {
+  background-color: #5a2c9b; /* Darker purple on hover */
+}
+
+/* Subscribe section styling */
+.subscribe-section {
+  background-color: rgba(125, 79, 202, 0.9); /* Purple background with transparency */
+  padding: 40px 20px; /* Padding inside the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  margin: 50px 0; /* Margin above and below the section */
+}
+
+.subscribe-section h2 {
+  color: #ffd700; /* Yellow color */
+  font-size: 36px; /* Font size for heading */
+  margin-bottom: 15px; /* Space below heading */
+}
+
+.subscribe-section p {
+  color: #fff; /* White text color */
+  font-size: 18px; /* Font size for paragraph */
+  margin-bottom: 20px; /* Space below paragraph */
+}
+
+.subscribe-section form {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center-align form elements */
+  gap: 10px; /* Space between form elements */
+}
+
+.subscribe-section input[type="email"] {
+  padding: 10px; /* Padding inside input */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* No border */
+  width: 300px; /* Fixed width */
+  font-size: 16px; /* Font size */
+}
+
+.subscribe-section button {
+  padding: 10px 20px; /* Padding inside button */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* No border */
+  background-color: #ffd700; /* Yellow background */
+  color: #fff; /* White text color */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+}
+
+.subscribe-section button:hover {
+  background-color: #e5c300; /* Darker yellow on hover */
+}
