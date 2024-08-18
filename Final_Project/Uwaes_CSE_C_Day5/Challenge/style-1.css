@@ -1,0 +1,563 @@
+.navbar .logo img{
+    width: 13rem;
+    height: 7rem;
+    padding: 0;
+    margin-top: -90px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar .logo img:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color-scheme: dark;
+}
+
+body{
+    color: #eee;
+    font-size: 1.125rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    background-color: black;
+    background-image: url(images/bg.png);
+    overflow-x: hidden;
+    overflow-y: inherit;
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+a:hover{
+    color: #6d216d;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin-top: 8rem;
+    padding-top: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .logo{
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.navbar .home a{
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+    border-bottom: 4px solid #6d216d;
+}
+
+.navbar .home:hover{
+    transform: scale(1.1);
+    font-weight: 900;
+    border-bottom: 4px solid #6d216d;
+}
+
+.navbar .about{
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+
+}
+
+.navbar .about:hover{
+    transform: scale(1.1);
+    font-weight: 900;
+    border-bottom: 4px solid #6d216d;
+}
+
+.navbar .events{
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.navbar .events:hover{
+    transform: scale(1.1);
+    font-weight: 900;
+    border-bottom: 4px solid #6d216d;
+}
+
+.navbar .contact{
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.navbar .contact:hover{
+    transform: scale(1.1);
+    font-weight: 900;
+    border-bottom: 4px solid #6d216d;
+}
+
+.navbar .register{
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.navbar .register:hover{
+    transform: scale(1.1);
+    font-weight: 900;
+    
+}
+
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    font-weight: bold;   
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar .toggle_btn:hover{
+    transform: scale(1.1);
+    font-weight: 900;
+    color: #6d216d;
+}
+
+.action_btn{
+    background-color: #6d216d;
+    color: white;
+    padding: 0.6rem 1.1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: bold;   
+    transition: color 0.3s, transform 0.3s;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+@media(max-width: 992px) {
+    .navbar  links,
+    .navbar .action_btn {
+        display: none; 
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .dropdown_menu {
+        width: unset;
+        left: 2rem;
+    }
+}
+
+.dropdown_menu {
+    color: #6d216d;
+    position: absolute;
+    overflow: hidden;
+    top: 70px;
+    right: 2rem;
+    height: 0px;
+    width: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu .action_btn:hover{
+    transform: scale(1.1);
+    font-weight: 900;
+    
+}
+
+.dropdown_menu.open {
+    height: 280px;
+    color: #6d216d;
+    
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dropdown_menu .home{
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.dropdown_menu .home:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.dropdown_menu .about{
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.dropdown_menu .about:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.dropdown_menu .events{
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.dropdown_menu .events:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.dropdown_menu .contact{
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.dropdown_menu .contact:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.dropdown_menu .register{
+    transition: color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.dropdown_menu .register:hover{
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.wrapper .contact h1{
+    margin-top: -40px;
+}
+
+.wrapper .button {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.wrapper .button .icon {
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.wrapper .contact {
+    transition: color 0.3s, transform 0.3s;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .contact:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+}
+
+.wrapper .info {
+    transition: color 0.3s, transform 0.3s;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .info:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+}
+
+.wrapper .button:hover .icon {
+    color: hsla(0, 0%, 0%, 0.995); 
+    transform: scale(1.1);
+}
+
+.wrapper .button span {
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.wrapper .button:hover {
+    background-color: hsl(0, 28%, 95%); 
+}
+
+.wrapper .button:nth-child(2):hover {
+    background-color: #326e8e; 
+}
+
+.wrapper .button:nth-child(3):hover {
+    background-color: #6d216d; 
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+    background: rgba(249, 249, 249, 0.171);
+    padding-top: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black ;
+    margin-top: -280px;
+    
+}
+
+.pagination {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    margin-bottom: 0;
+    color: black;
+}
+
+.pagination .btn1, .pagination .btn2 {
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 0px 13px 1px 13px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination .btn1 a, .pagination .btn2 a{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+    color: white;
+}
+
+.pagination .point {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    color: rgb(250, 250, 250);
+}
+
+.pagination .point li {
+    display: flex;
+    margin: 0 30px 0 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 40%;
+    justify-content: center;
+    line-height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.pagination .btn1{
+    transition: color 0.3s, transform 0.3s;
+    margin: 0.2rem 0 0 20px;
+    background-image: linear-gradient(#6d216d,#6d216d);
+    background-repeat: no-repeat;
+}
+
+.pagination .btn1:hover{
+    color: #eee;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+.pagination .home{
+    transition: color 0.3s, transform 0.3s;
+}
+
+.pagination .home:hover{
+    color: #6d216d;
+    transform: scale(2.1);
+}
+
+.pagination .about{
+    transition: color 0.3s, transform 0.3s;
+    color: #6d216d;
+}
+
+.pagination .about:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.pagination .events{
+    transition: color 0.3s, transform 0.3s;
+}
+
+.pagination .events:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.pagination .contact{
+    transition: color 0.3s, transform 0.3s;
+}
+
+.pagination .contact:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.pagination .register{
+    transition: color 0.3s, transform 0.3s;
+}
+
+.pagination .register:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.pagination .btn2{
+    transition: color 0.3s, transform 0.3s;
+    margin: 0.2rem 0 0 20px;
+    background-image: linear-gradient(#6d216d,#6d216d);
+    background-repeat: no-repeat;
+}
+
+.pagination .btn2:hover{
+    color: #eee;
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-content h1:hover{
+    color: white;
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+.about-content #topic{
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.about-content #topic:hover{
+    color: #6d216d;
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+.about-content h1{
+    font-size: 2.3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    border-bottom: 4px solid #6d216d;
+    display: inline-block;
+}
+
+.about-content h3{
+    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
