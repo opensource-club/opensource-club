@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag for character encoding -->
+    <meta charset="UTF-8">
+    <!-- Meta tag for responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page displayed in the browser tab -->
+    <title>Welcome</title>
+    <style>
+        /* General body styling */
+        body {
+            /* Margin around the body */
+            margin: 20px;
+            /* Padding inside the body */
+            padding: 30px;
+            /* Set a fixed background image, prevent scrollbars */
+            background: url('osc.jpg') no-repeat center center fixed; /* Replace with your background image */
+            /* Ensure the background image covers the entire viewport */
+            background-size: cover;
+            /* Set the height of the body to 100% of the viewport */
+            height: 100vh;
+            /* Use Flexbox to center content both horizontally and vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Set text color */
+            color: black;
+            /* Font style for the entire page */
+            font-family: Arial, sans-serif;
+            /* Center text inside the body */
+            text-align: center;
+        }
+        /* Styling for the splash text container */
+        .splash-text {
+            font-family: 'Times New Roman', Times, serif;
+            /* Set the font size for the splash text */
+            font-size: 2rem; /* Adjust size as needed */
+            /* Semi-transparent black background for text readability */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Padding inside the splash text container */
+            padding: 50px;
+            /* Rounded corners for the splash text container */
+            border-radius: 10px;
+            /* Set text color */
+            color: white; /* Make sure text is readable against the background */
+            margin-bottom: 511px;
+            margin-left: 540px;
+        }
+    </style>
+    <script>
+        // JavaScript to redirect to homepage after a delay
+        setTimeout(function() {
+            // Redirect to the specified homepage after 3 seconds
+            window.location.href = 'index.html'; // Replace with the path to your homepage
+        }, 3000); // Delay of 3000 milliseconds (3 seconds)
+    </script>
+</head>
+<body>
+    <!-- Container for the splash text -->
+    <div class="splash-text">
+        <h1>Open Source <span>
+            Club</span></h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style-5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Register</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"> <a href="1.html"> <img src="images/logo.png"></a></div>
+        <ul class="links">
+        <li class="home"><a href="1.html">Home</a></li>
+        <li class="about"><a href="2.html">About Us</a></li>
+        <li class="events"><a href="3.html">Events</a></li>
+        <li class="contact"><a href="4.html">Contact Us</a></li>
+      </ul>
+      <div class="register">
+      <a href="5.html" class="action_btn">Register</a>
+      </div>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li class="home"><a href="1.html">Home</a></li>
+      <li class="about"><a href="2.html">About Us</a></li>
+      <li class="events"><a href="3.html">Events</a></li>
+      <li class="contact"><a href="4.html">Contact Us</a></li>
+      <li class="register"><a href="5.html" class="action_btn">Register</a></li>
+    </div>
+  </header>
+
+<main>
+    
+<section class="form">
+  <div class="form-guidline">
+
+    <!--Create input tables for the Registration form-->
+    <!--Get the inputs in text or number or file format-->
+    <!--Use radio to get single input button-->
+    <!--Create Placeholder for easy convenience-->
+
+    <center>
+      <h1>Registeration form</h1>
+
+      <form action="/submit-form" method="post">
+         
+          <fieldset>
+<!--Use forms, fieldset, legend, input, name and placeholder to create a input registering form-->
+              <legend>Personal Info</legend>
+              <label for="name">Username:</label>
+              <input type="text" id="name" name="username" placeholder="Enter Your new username">
+              <label for="password">Password:</label>
+              <input type="text" id="Password" name="Password" placeholder="Enter Your new Password">
+              <label for="Captcha">Save Login Info:</label>
+              <input type="checkbox" id="Captcha" name="Captcha">
+          
+          <table> <caption>Register</caption>
+
+              <thead>
+
+                  <th>Fill the Details</th>
+
+              <tr>
+                  <td>Name :</td> <td><input type="text" placeholder="Enter Your Name"></td>
+              </tr>
+
+              </thead>
+
+              <tbody>
+
+              <tr>
+                  <td>Department :</td> <td><input type="text" placeholder="Enter Your Department"></td>
+              </tr>
+          
+          </tbody>
+
+              <tr>
+                  <td>Section :</td> <td><input type="text" placeholder="Enter Your Section"></td>
+              </tr>
+
+              <tr>
+                  <td>RRN :</td> <td><input type="number" placeholder="Enter Your RRN"></td>
+              </tr>
+
+              <tr>
+                  <td>Year of study :</td> <td><input type="number" placeholder="Enter Your Year of study"></td>
+              </tr>
+
+              <tr>
+                  <td>Gender :</td> 
+                  <td>
+                      <input type="radio" name="Gender">Male
+                      <input type="radio" name="Gender">Female
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>Email :</td> <td><input type="email" placeholder="Enter Your Email"></td>
+              </tr>
+
+              <tr>
+                  <td>Phone :</td> <td><input type="number" placeholder="Enter Your Number"></td>
+              </tr>
+
+              <tr>
+                  <td>Upload your ID</td>
+                  <td><input type="file"></td>
+              </tr>
+
+              <tr>
+                  <td><a href="11.html"><input type="submit"></a></td>
+                  <td><input type="reset"></td>
+              </tr>
+              
+          </table>
+
+      </fieldset>
+
+      </form>
+  </center>
+
+  <hr>
+</main>
+</div>
+</section>
+</main>
+
+  <script>
+    const toggle_btn = document.querySelector('.toggle_btn')
+    const toggle_btnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggle_btn.onclick = function(){
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList('open')
+      const isclose = dropDownMenu.classList('close')
+
+      toggle_btn.classList = isOpen
+      ? 'fa-solid fa-bars'
+      : 'fa-solid fa-xmarks'
+    }
+  </script>
+
+
+
+     
+
+<!--Linking Registration form-->
+<!--Linking LinkedIn Profile-->
+<!--Linking Instagram Profile-->
+<footer>
+
+  <div class="container">
+    <div class="pagination">
+        <button class="btn1"><a href="4.html">⬅ Prev</a></button>
+        <ul class="point">
+            <li class="home" value="1"><a href="1.html">🏠</a></li>
+            <li class="about" value="2"><a href="2.html">About Us</a></li>
+            <li class="events" value="3"><a href="3.html">Events</a></li>
+            <li class="contact" value="4"><a href="4.html">Contact</a></li>
+            <li class="register" value="5"><a href="5.html">Register</a></li>
+        </ul>
+        <button class="btn2"><a href="#">Next ➡</a></button>
+    </div>
+</div>
+
+
+<center> 
+  <div class="wrapper">
+<div class="contact">
+    <center>
+      <h2>CONTACT</h2>
+  </center>
+</div>
+<div class="info">
+  <center>
+    <a>📞 +91 3508 3508 | 📧 opensourceclub@crescent.education | 📍 Vandalur, Tamil Nadu</a>
+</center> 
+</div>
+      <a href="5.html">
+          <div class="button">
+          <div class="icon">
+              <i class="fa-solid fa-registered"></i>
+          </div>
+          <span>Register</span>
+      </div></a>
+      <a href="https://www.linkedIn.com/company/open-source-club-crescent/">
+          <div class="button">
+          <div class="icon">
+              <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <span>LinkedIn</span>
+      </div></a>
+      <a href="https://www.instagram.com/open_source_club/?hl=en">
+          <div class="button">
+          <div class="icon">
+              <i class="fab fa-instagram"></i>
+          </div>
+          <span>Instagram</span>
+      </div></a>
+  </div>
+</center>
+
+<p>&copy; 2024 Open Source Club. All ights reserved</p> <br />
+<!--Give pagination to redirect to other pages-->
+</footer>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag specifying the character encoding for the webpage -->
+    <meta charset="UTF-8">
+    <!-- Meta tag for setting the viewport to ensure responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag providing a description of the webpage content for search engines -->
+    <meta name="description" content="Welcome to the Open Source Club, a community dedicated to promoting open-source software and collaborative development.">
+    <!-- Meta tag with keywords related to the webpage for search engines -->
+    <meta name="keywords" content="Open Source, Software, Community, Development, Collaborative">
+    <!-- Meta tag specifying the author of the webpage -->
+    <meta name="author" content="Open Source Club">
+    <!-- Title of the webpage as displayed in the browser tab -->
+    <title>Open Source Club - Home</title>
+    <!-- Link to Bootstrap CSS for responsive design and pre-built styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General body styles */
+        body {
+            /* Adds padding at the top to accommodate the fixed navbar */
+            padding-top: 56px;
+            /* Sets the background color to a dark red shade */
+            background-color: #8e0d0d; 
+            /* Applies a background image for added texture */
+            background-image: url('os2.webp'); 
+            /* Sets the text color to white for contrast against the dark background */
+            color: #ffffff; 
+            /* Sets the font family for the text */
+            font-family: Arial, sans-serif; 
+            /* Positions the body element relatively for positioning child elements */
+            position: relative; 
+        }
+        
+        /* Navbar styles */
+        .navbar {
+            /* Sets the background color of the navbar to black */
+            background-color: #000000; 
+        }
+        /* Styling for the brand name and navigation links within the navbar */
+        .navbar-brand, .nav-link {
+            /* Ensures that the text color for these elements is red */
+            color: #ba0000 !important; 
+        }
+        /* Optional styling for the toggler icon in the navbar */
+        .navbar-toggler-icon {
+            /* Sets the background color of the toggler icon to red */
+            background-color: #ba0000; 
+        }
+
+        /* Page title section style */
+        .page-title {
+            /* Adds margin to the top of the title section */
+            margin-top: 60px;
+            /* Adds margin to the bottom of the title section */
+            margin-bottom: 30px; 
+            /* Adds padding inside the title section for spacing */
+            padding: 40px; 
+            /* Sets the background color of the title section to black */
+            background-color: #000000; 
+            /* Rounds the corners of the title section */
+            border-radius: 10px; 
+            /* Centers the text within the title section */
+            text-align: center; 
+        }
+        /* Styling for the main title within the title section */
+        .page-title h1 {
+            /* Sets the text color of the main title to red */
+            color: #ba0000; 
+            /* Increases the font size of the main title */
+            font-size: 2.5rem; 
+        }
+        /* Styling for the paragraph text within the title section */
+        .page-title p {
+            /* Sets the text color of the paragraph to a slightly darker red */
+            color: #9b0404; 
+            /* Sets the font size of the paragraph text */
+            font-size: 1.25rem; 
+            /* Adjusts the line height for readability */
+            line-height: 1.6;
+        }
+
+        /* Importance section styles */
+        .importance {
+            /* Adds margin to the top of the importance section */
+            margin-top: 40px; 
+            /* Adds padding inside the importance section for spacing */
+            padding: 30px; 
+            /* Sets the background color of the importance section to black */
+            background-color: #000000; 
+            /* Rounds the corners of the importance section */
+            border-radius: 10px; 
+        }
+        /* Styling for the title within the importance section */
+        .importance h2 {
+            /* Sets the text color of the importance title to a slightly lighter red */
+            color: #aa0000; 
+            /* Increases the font size of the importance title */
+            font-size: 2rem; 
+        }
+        /* Styling for the paragraph text within the importance section */
+        .importance p {
+            /* Sets the text color of the paragraph to a darker shade of red */
+            color: #a10404; 
+            /* Sets the font size of the paragraph text */
+            font-size: 1.125rem; 
+            /* Adjusts the line height for readability */
+            line-height: 1.6;
+        }
+
+        /* Background image styles */
+        .background-image {
+            /* Positions the background image absolutely relative to the nearest positioned ancestor */
+            position: absolute; 
+            /* Positions the image from the bottom with a 100px offset */
+            bottom: 100px;
+            /* Positions the image from the right with a 50px offset */
+            right: 50px; 
+            /* Sets the width of the background image */
+            width: 300px; 
+            /* Sets the height of the image to auto to maintain aspect ratio */
+            height: auto; 
+            /* Ensures the image is behind other content */
+            z-index: -1; 
+            /* Sets the opacity of the image */
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <!-- Brand name displayed in the navbar -->
+        <a class="navbar-brand" href="#">Open Source Club</a>
+        <!-- Toggler button for collapsing the navbar on smaller screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Navigation link for the home page, marked as active -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- Navigation link for the members page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="members.html">Members</a>
+                </li>
+                <!-- Navigation link for the events page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <!-- Navigation link for the leaderboard page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="container">
+        <!-- Main title section -->
+        <div class="page-title">
+            <!-- Main heading for the page -->
+            <h1>Welcome to the Open Source Club</h1>
+            <!-- Description paragraph for the page -->
+            <p>The Open Source Club is a community dedicated to promoting open-source software and collaborative development. Join us to work on exciting projects and make a difference in the world of software development.</p>
+        </div>
+        
+        <!-- Section explaining the importance of open source -->
+        <div class="importance">
+            <!-- Subheading for the importance section -->
+            <h2>Why Open Source Matters</h2>
+            <!-- Description paragraph for the importance section -->
+            <p>Open source software is crucial for innovation, transparency, and community-driven development. By participating in open source projects, you contribute to a global movement that promotes collaboration, security, and the sharing of knowledge. Our club emphasizes the importance of these values and provides a platform for members to engage with and contribute to meaningful projects.</p>
+        </div>
+    </div>
+
+    <!-- Decorative background image -->
+    <img src="path/to/your/background-image.jpg" alt="Background Image" class="background-image" />
+
+    <!-- Scripts for Bootstrap functionality -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

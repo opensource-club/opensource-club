@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style-9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Machine Learning Challenge</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"> <a href="1.html"> <img src="images/logo.png"></a></div>
+        <ul class="links">
+        <li class="home"><a href="1.html">Home</a></li>
+        <li class="about"><a href="2.html">About Us</a></li>
+        <li class="events"><a href="3.html">Events</a></li>
+        <li class="contact"><a href="4.html">Contact Us</a></li>
+      </ul>
+      <div class="register">
+      <a href="5.html" class="action_btn">Register</a>
+      </div>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <style>
+        .navbar li{
+          list-style: none;
+        }
+        </style>
+    </div>
+
+    <div class="dropdown_menu">
+      <li class="home"><a href="1.html">Home</a></li>
+      <li class="about"><a href="2.html">About Us</a></li>
+      <li class="events"><a href="3.html">Events</a></li>
+      <li class="contact"><a href="4.html">Contact Us</a></li>
+      <li class="register"><a href="5.html" class="action_btn">Register</a></li>
+    </div>
+    <style>
+      .dropdown_menu li{
+        list-style: none;
+      }
+      </style>
+  </header>
+
+<section class="event-mlc">
+  <div class="event-guidline">
+
+   
+<!--Give heading and fill the page with relevant points-->
+<center>
+  <div class="Heading">
+  <h1>Machine Learning Challenge🎊</h1>
+  <p><b>Build | Style | Create</b></p>
+  <hr>
+  <p>One week challenge to sharpen your coding skills and get you ready for placement season.🧑‍💻</p>
+  <style>
+    .Heading p {
+      font-size: 24px;
+    }
+  </style>
+
+</div>
+  <nav class="poster">
+    <img src="images/MLC.jpg">
+    <style>
+      .poster img{
+        width: 300px;
+        height: 300px;
+      } 
+    </style>
+</nav>
+</center>
+
+<article>
+<!--Fill the page with relevant points-->
+  <h1>Event Overview:</h1>
+  <p>The Open Source Club of Crescent Institute of Science & Technology is thrilled to announce a one-week challenge on Machine Learning. This exciting event invites participants to build machine learning models with high accuracy, offering a unique opportunity to sharpen their technical skills while competing for amazing prizes. Open to all tech enthusiasts, the challenge encourages innovation, creativity, and practical application of machine learning concepts.</p>
+  <h1>Workshop Details:</h1>
+  <ul>
+    <li>One Week Challenge</li>
+    <li>Time: 7:00 PM od day 1 to 4:00 PM of day 2</li>
+    <li>Online Mode</li>
+  </ul>
+  <h1>One-Week Machine Learning Challenge: Dive into ML Basics!</h1>
+  <p>Join us for an intense and exciting one-week Machine Learning challenge, where you'll get hands-on experience with the foundations of ML. Over the course of seven days, participants will work through real-world problems, starting from data preprocessing to building and evaluating basic models. Whether you're new to machine learning or looking to sharpen your skills, this challenge is designed to push your limits, foster collaboration, and ignite your passion for AI. Don't miss out on this opportunity to learn, innovate, and compete!</p>
+  <p>The workshop will be led by Ajas Ahamed, an experienced resource person in the domain, ensuring that attendees get hands-on experience and expert insights.</p>
+  <h1>Event Instructions</h1>
+  <p>Participants will receive a daily machine learning question to work on. Using the provided dataset—or a dataset sourced online—they will create a machine learning model tailored to solve the problem at hand. Participants are required to push their code and models to GitHub, showcasing their work to the broader community. The best projects will be recognized and awarded at the prestigious CSE department's symposium, ARCANE. Evaluation criteria include accuracy, creativity, and efficiency, with an emphasis on enjoying the learning process and the opportunity to demonstrate one's skills.</p>
+  <center>
+    <nav class="poster">
+      <img src="images/MLCI.jpg">
+      <style>
+        .poster img{
+          width: 300px;
+          height: 300px;
+        } 
+      </style>
+  </nav>
+  </center>
+  <center>
+    <div class="wrapper">
+      <a href="5.html">
+          <div class="button">
+          <div class="icon">
+              <i class="fa-solid fa-registered"></i>
+          </div>
+          <span>Register for Machine Learning Challenge</span>
+      </div></a>
+    </div>
+  </center>
+  
+  <p>Come and enhance your coding skills while contributing to the open-source community. See you there!</p>
+  <h1>Registration:</h1>
+  <p>Click the provided link to register for the challenge. Make sure to register as soon as possible to secure your spot in this competitive and educational event!
+  </p>
+  
+  <p>For any queries or further information, feel free to reach out to the event coordinators through Instagram and LinkedIn.</p><br />
+  <p>The Open Source Club encourages all students to participate in this event, not just for the potential cash prizes, but also to enhance their coding skills, which are critical in today’s job market. Let’s code for a better future together!</p>
+  
+  <style>
+  .article p{
+    font-size: 24px;
+  }
+  .article h1{
+    font-size: 36px
+  }
+  </style>
+  </article> 
+</div>
+</section>
+
+  <script>
+    const toggle_btn = document.querySelector('.toggle_btn')
+    const toggle_btnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggle_btn.onclick = function(){
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList('open')
+      const isclose = dropDownMenu.classList('close')
+
+      toggle_btn.classList = isOpen
+      ? 'fa-solid fa-bars'
+      : 'fa-solid fa-xmarks'
+    }
+  </script>
+
+
+
+     
+
+<!--Linking Registration form-->
+<!--Linking LinkedIn Profile-->
+<!--Linking Instagram Profile-->
+<footer>
+
+  <div class="container">
+    <div class="pagination">
+        <button class="btn1"><a href="3.html">⬅ Prev</a></button>
+        <ul class="point">
+            <li class="home" value="1"><a href="1.html">🏠</a></li>
+            <li class="about" value="2"><a href="2.html">About Us</a></li>
+            <li class="events" value="3"><a href="3.html">Events</a></li>
+            <li class="contact" value="4"><a href="4.html">Contact</a></li>
+            <li class="register" value="5"><a href="5.html">Register</a></li>
+        </ul>
+        <button class="btn2"><a href="5.html">Next ➡</a></button>
+    </div>
+</div>
+
+
+<center> 
+  <div class="wrapper">
+<div class="contact">
+    <center>
+      <h2>CONTACT</h2>
+  </center>
+</div>
+<div class="info">
+  <center>
+    <a>📞 +91 3508 3508 | 📧 opensourceclub@crescent.education | 📍 Vandalur, Tamil Nadu</a>
+</center> 
+</div>
+      <a href="5.html">
+          <div class="button">
+          <div class="icon">
+              <i class="fa-solid fa-registered"></i>
+          </div>
+          <span>Register for Machine Learning Challenge</span>
+      </div></a>
+      <a href="https://www.linkedIn.com/company/open-source-club-crescent/">
+          <div class="button">
+          <div class="icon">
+              <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <span>LinkedIn</span>
+      </div></a>
+      <a href="https://www.instagram.com/open_source_club/?hl=en">
+          <div class="button">
+          <div class="icon">
+              <i class="fab fa-instagram"></i>
+          </div>
+          <span>Instagram</span>
+      </div></a>
+  </div>
+</center>
+
+<p>&copy; 2024 Open Source Club. All ights reserved</p> <br />
+<!--Give pagination to redirect to other pages-->
+</footer>
+</body>
+</html>

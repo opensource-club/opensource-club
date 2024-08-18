@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag specifying the character encoding for the webpage -->
+    <meta charset="UTF-8">
+    <!-- Meta tag for setting the viewport to ensure responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage as displayed in the browser tab -->
+    <title>Open Source Club - Members</title>
+    <!-- Link to Bootstrap CSS for responsive design and pre-built styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Styling for the entire body of the webpage */
+        body {
+            /* Adds padding at the top to accommodate the fixed navbar */
+            padding-top: 56px;
+            /* Sets the background color to a dark red shade */
+            background-color: rgb(130, 7, 7);
+            /* Applies a background image for added texture */
+            background-image: url('os2.webp');
+            /* Sets the text color to a dark red for readability */
+            color: rgb(149, 11, 11);
+            /* Sets the font family for the text */
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Styling for the navigation bar */
+        .navbar {
+            /* Sets the background color of the navbar to black */
+            background-color: #000000;
+        }
+        /* Styling for the brand name and navigation links within the navbar */
+        .navbar-brand, .nav-link {
+            /* Ensures that the text color for these elements is red */
+            color: #ba0000 !important;
+        }
+        /* Optional styling for the toggler icon in the navbar */
+        .navbar-toggler-icon {
+            /* Sets the background color of the toggler icon to red */
+            background-color: #ba0000;
+        }
+
+        /* Styling for the main container of the page content */
+        .container {
+            /* Adds margin to the top of the container */
+            margin-top: 30px;
+        }
+
+        /* Styling for sections with a background color */
+        .section-background {
+            /* Sets the background color of the section to a dark gray */
+            background-color: #302727;
+            /* Adds padding inside the section for spacing */
+            padding: 40px;
+            /* Rounds the corners of the section */
+            border-radius: 10px;
+            /* Adds a subtle shadow for a 3D effect */
+            box-shadow: 0 4px 8px rgba(44, 43, 43, 0.1);
+            /* Adds margin to the bottom of the section */
+            margin-bottom: 30px;
+        }
+
+        /* Styling for section titles */
+        .section-title {
+            /* Adds margin to the bottom of the section title */
+            margin-bottom: 30px;
+            /* Sets the text color for section titles to dark red */
+            color: #9b1414;
+        }
+
+        /* Styling for card elements */
+        .card {
+            /* Removes the default border of the card */
+            border: none;
+            /* Rounds the corners of the card */
+            border-radius: 15px;
+            /* Adds a subtle shadow for depth */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Smooth transition effect on hover */
+            transition: transform 0.3s ease-in-out;
+        }
+        /* Styling for card elements on hover */
+        .card:hover {
+            /* Slightly enlarges the card on hover */
+            transform: scale(1.05);
+        }
+
+        /* Styling for the image within the card */
+        .card-img-top {
+            /* Rounds the top corners of the card image to match the card's border radius */
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            /* Sets a fixed height for the card image */
+            height: 200px;
+            /* Ensures the image covers the entire area of the card */
+            object-fit: cover;
+        }
+
+        /* Styling for the content inside the card */
+        .card-body {
+            /* Adds padding inside the card body for spacing */
+            padding: 20px;
+        }
+
+        /* Styling for the card title */
+        .card-title {
+            /* Increases the font size for the card title */
+            font-size: 1.5rem;
+            /* Sets the text color for the card title to dark red */
+            color: #941414;
+        }
+
+        /* Styling for the text inside the card */
+        .card-text {
+            /* Sets a standard font size for the card text */
+            font-size: 1rem;
+            /* Sets the text color to dark grey for readability */
+            color: #555;
+        }
+
+        /* Styling for team member sections */
+        .team-member {
+            /* Centers the text within the team member section */
+            text-align: center;
+        }
+        /* Styling for images of team members */
+        .team-member img {
+            /* Makes the team member images circular */
+            border-radius: 50%;
+            /* Sets a fixed width for the images */
+            width: 150px;
+            /* Sets a fixed height for the images */
+            height: 150px;
+            /* Ensures the image covers the entire area */
+            object-fit: cover;
+            /* Adds a dark red border around the images */
+            border: 3px solid #760404;
+        }
+        /* Styling for team member names */
+        .team-member h4 {
+            /* Adds space above the team member name */
+            margin-top: 10px;
+            /* Sets the text color for team member names to dark red */
+            color: #9e1717;
+        }
+
+        /* Additional background styling for sections */
+        .background-color {
+            /* Sets the background color to a dark shade for contrast */
+            background-color: #161414;
+            /* Adds padding inside the section */
+            padding: 20px;
+            /* Rounds the corners of the section */
+            border-radius: 10px;
+            /* Adds a subtle shadow for depth */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <!-- Brand name displayed in the navbar -->
+        <a class="navbar-brand" href="#">Open Source Club</a>
+        <!-- Toggler button for collapsing the navbar on smaller screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Navigation link for the home page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- Navigation link for the members page, marked as active -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="members.html">Members</a>
+                </li>
+                <!-- Navigation link for the events page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <!-- Navigation link for the leaderboard page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Members Page Content -->
+    <div class="container">
+        <!-- Section showcasing Open Source members -->
+        <div class="section-background background-color">
+            <!-- Section title centered on the page -->
+            <h2 class="section-title text-center">Our Open Source Members</h2>
+            <div class="row">
+                <!-- Card for the first member -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Image for the first card -->
+                        <img src="team1.jpg" class="card-img-top" alt="Coding Event">
+                        <div class="card-body">
+                            <!-- Placeholder for additional content -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Card for the second member -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Image for the second card -->
+                        <img src="team2.jpg" class="card-img-top" alt="Non-Technical Event">
+                        <div class="card-body">
+                            <!-- Placeholder for additional content -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Card for the third member -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Image for the third card -->
+                        <img src="team3.jpg" class="card-img-top" alt="HTML/CSS Bootcamp">
+                        <div class="card-body">
+                            <!-- Placeholder for additional content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Workshops Section -->
+        <div class="section-background background-color mt-5">
+            <!-- Section title centered on the page -->
+            <h2 class="section-title text-center">WORKSHOPS TO DO!</h2>
+            <div class="row">
+                <!-- Workshop 1 -->
+                <div class="col-md-4 team-member">
+                    <!-- Image for the first workshop -->
+                    <img src="os.png" alt="Machine Learning Workshop">
+                    <!-- Title for the first workshop -->
+                    <h4>MACHINE LEARNING WORKSHOP</h4>
+                </div>
+                <!-- Workshop 2 -->
+                <div class="col-md-4 team-member">
+                    <!-- Image for the second workshop -->
+                    <img src="ose.png" alt="HTML/CSS Workshop">
+                    <!-- Title for the second workshop -->
+                    <h4>HTML/CSS</h4>
+                </div>
+                <!-- Workshop 3 -->
+                <div class="col-md-4 team-member">
+                    <!-- Image for the third workshop -->
+                    <img src="Open Source.png" alt="Hackathon">
+                    <!-- Title for the third workshop -->
+                    <h4>HACKATHON</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Scripts for adding interactivity and ensuring responsive behavior -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Openwebi</title>
+  <!-- Logo linking  -->
+  <link rel="icon" href="./assets/book-half.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="">
+     <!-- Header Section -->
+    <header class="p-3 text-bg-dark" id="home">
+        <!-- Flexbox container for header elements: logo, dropdown menu, search form, and navigation -->
+      <div class="d-flex justify-content-between align-items-center">
+        <a href="#home" class="logo">
+          <p class="m-0 fs-4 "> Open Source</p>
+        </a>
+
+        <div class="btn-group">
+          <p class="dropdown-toggle dropdown-toggle-split mt-3" style="cursor: pointer; font-size:1.3rem;"
+            data-bs-toggle="dropdown" aria-expanded="false">Categories
+          </p>
+          <ul class="dropdown-menu">
+               <!-- List of categories in the dropdown -->
+            <li><a class="dropdown-item" href="#">FrontEnd</a></li>
+            <li><a class="dropdown-item" href="#">BackEnd</a></li>
+            <li><a class="dropdown-item" href="#">FullStack</a></li>
+            <li><a class="dropdown-item" href="#">Video Editing</a></li>
+            <li><a class="dropdown-item" href="#">Cyber security</a></li>
+            <li><a class="dropdown-item" href="#">IOT</a></li>
+            <li><a class="dropdown-item" href="#">DB Management</a></li>
+            <li><a class="dropdown-item" href="#">SQL</a></li>
+            <li><a class="dropdown-item" href="#">Finance & Accounting</a></li>
+            <li><a class="dropdown-item" href="#">Personal Development</a></li>
+            <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+          </ul>
+        </div>
+
+        <!-- Search form -->
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex gap-3" style="width: 600px;" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+            aria-label="Search">
+          <button type="button" class="btn btn-outline-light">Search</button>
+        </form>
+        <div>
+          <ul class="nav">
+            <!-- Navigation links -->
+            <li><a href="#home" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="./plans.html" class="nav-link px-2 text-white">Plans & Pricing</a></li>
+            <li><a href="#teach" class="nav-link px-2 text-white">Teach on OpenSource</a></li>
+            <li><a href="#faq" class="nav-link px-2 text-white">FAQs</a></li>
+            <li><a href="#about" class="nav-link px-2 text-white">About</a></li>
+            <li class="px-2"><a href="./Login.html"><button type="button"
+                  class="btn btn-outline-light">Login</button></a></li>
+            <li class="px-2"><a href="./signup.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div style="height: 85px; border-bottom:1.5px solid black" class="d-flex align-items-center">
+        <p class="typing ms-4">Extract the knowledge from us...</p>
+      </div>
+      <div class="banner mb-5">
+          <!-- Carousel banner -->
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"
+          style="height: 80vh;">
+          <div class="carousel-inner">
+               <!-- Carousel items -->
+            <div class="carousel-item">
+              <img src="https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png"
+                class="d-block w-100 carousalstyling" alt="bootstrap image">
+            </div>
+            <div class="carousel-item ">
+              <img src="https://atlasiko.com/asserts/blog/html-semantic-elements.jpg"
+                class="d-block w-100 carousalstyling" alt="semantic html">
+            </div>
+            <div class="carousel-item active">
+              <img src="https://html.com/wp-content/uploads/html-hpg-featured-new.png"
+                class="d-block w-100 carousalstyling" alt="css image">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+       <!-- Section for Teach with us -->
+      <div class="Teachwithus p-5" id="teach"></div>
+      <div class="card-body text-center">
+         <!-- Section title and description -->
+        <h1 class="card-title mb-1">Come teach with us</h1>
+        <p class="card-text mb-3" style="font-size: 1.2rem;">Become an instructor and change lives — including your
+          own.extend
+          this sentence</p>
+      </div>
+      <div class="container-fluid col-xl-10 px-4 ">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://www.the74million.org/wp-content/uploads/2018/06/teacher-with-2-girls.jpg"
+              class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <!-- include heading and paragraph -->
+            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Inspire, Educate, and Grow with Us</h2>
+            <p class="lead" style="text-align: justify;">Join our community of educators and make a lasting impact.
+              Inspire
+              and guide the next generation while growing personally and professionally. Share your expertise, ignite
+              curiosity, and help shape a brighter future in a supportive environment. Together, we can change lives and
+              create meaningful educational experiences.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start d-flex">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scoring p-5"></div>
+
+      <!-- What you will get section using container fluid for margin and also it is resposive  -->
+      <div class="container-fluid col-xl-10 px-4 ">
+        <h3 class="text-center">What u will get...</h3>
+        <div class="row align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <img src="./assets/score.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="600"
+              height="400" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <div class="row row-cols-1 g-4">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Practical Training</h5>
+                    <p class="card-text">Enhance your skills with interactive, AI-driven coding exercises, practice
+                      tests, and quizzes designed for effective learning.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Certification Preparation</h5>
+                    <p class="card-text">Prepare for industry-recognized certifications by tackling real-world problems
+                      and earning badges as you progress.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Data-Driven Insights</h5>
+                    <p class="card-text">Accelerate your objectives with advanced analytics and personalized support
+                      from a dedicated customer success team.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Tailored Learning Solutions</h5>
+                    <p class="card-text">Design customized learning paths that align with team and organizational goals,
+                      and host your own content and resources.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- frequently asked questions using grid and flexbox in bootstrap -->
+  <div class=" container-fluid p-5 " id="faq">
+    <h3 class="text-center mb-5">Frequently asked questions</h3>
+    <div class="row row-cols-1 row-cols-md-2 g-5  ">
+      <div class="col">
+        <div class="card mb-3" style="width: 100%; border:none; ">
+          <div class="row g-0">
+            <div class="col-md-2 d-flex flex-column  align-items-center g-4">
+              <img src="./assets/iconforfaq.png" class="img-fluid rounded-start mb-3" style="height: 50px; width:50px"
+                alt="...">
+              <div style="border-left: 2px solid black; height:140px;">
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">How do I sign up for your service?</h5>
+                <p class="card-text">ign up by clicking the "Sign Up" button
+                  prominently displayed on our homepage.
+                  Once you click the button, you will be guided
+                  through a simple, user-friendly registration process.
+                  Just follow the step-by-step prompts,
+                  and you'll be all set up to start enjoying our services.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3" style="width: 100%; border:none; ">
+          <div class="row g-0">
+            <div class="col-md-2 d-flex flex-column  align-items-center g-4">
+              <img src="./assets/iconforfaq.png" class="img-fluid rounded-start mb-3" style="height: 50px; width:50px"
+                alt="...">
+              <div style="border-left: 2px solid black; height:140px;">
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Is there a free trial available?</h5>
+                <p class="card-text">Yes, we offer a 14-day free trial
+                  designed specifically for all new users.
+                  This trial period gives you full access to explore
+                  all the features and functionalities of our platform.
+                  Use this time to evaluate whether our service meets
+                  your needs and expectations before making a commitment.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3" style="width: 100%; border:none; ">
+          <div class="row g-0">
+            <div class="col-md-2 d-flex flex-column  align-items-center ">
+              <img src="./assets/iconforfaq.png" class="img-fluid rounded-start mb-3" style="height: 50px; width:50px"
+                alt="...">
+              <div style="border-left: 2px solid black; height:140px;">
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">What features are included in each plan?</h5>
+                <p class="card-text">Each plan includes a comprehensive set of core features
+                  carefully designed to address your fundamental requirements.
+                  For those who need more advanced functionalities,
+                  we offer higher-tier plans that provide additional,
+                  premium options tailored to enhance your experience.
+                  This way, you can choose a plan that perfectly suits your needs.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3" style="width: 100%; border:none; ">
+          <div class="row g-0">
+            <div class="col-md-2 d-flex flex-column  align-items-center ">
+              <img src="./assets/iconforfaq.png" class="img-fluid rounded-start mb-3" style="height: 50px; width:50px"
+                alt="...">
+              <div style="border-left: 2px solid black; height:140px;">
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Is customer support available 24/7?</h5>
+                <p class="card-text">Yes, our customer support is available 24/7
+                  through a variety of channels, including live chat, email, and phone.
+                  Whenever you have a question or encounter an issue,
+                  our dedicated support team is always ready to assist.
+                  We ensure that you receive timely and effective help,
+                  no matter the time of day or night.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3" style="width: 100%; border:none; ">
+          <div class="row g-0">
+            <div class="col-md-2 d-flex flex-column  align-items-center ">
+              <img src="./assets/iconforfaq.png" class="img-fluid rounded-start mb-3" style="height: 50px; width:50px"
+                alt="...">
+              <div style="border-left: 2px solid black; height:140px;">
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Is my data secure and private?</h5>
+                <p class="card-text">Absolutely, we prioritize the security of your data
+                  by employing industry-standard encryption techniques.
+                  In addition, we adhere to strict privacy protocols to
+                  protect your personal information from unauthorized access.
+                  You can have peace of mind knowing that your data
+                  is secured by our robust and continuously updated security measures.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3" style="width: 100%; border:none; ">
+          <div class="row g-0">
+            <div class="col-md-2 d-flex flex-column  align-items-center ">
+              <img src="./assets/iconforfaq.png" class="img-fluid rounded-start mb-3" style="height: 50px; width:50px"
+                alt="...">
+              <div style="border-left: 2px solid black; height:140px;">
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <h5 class="card-title">Can I upgrade or downgrade my plan?</h5>
+                <p class="card-text">Yes, you have the flexibility to change your plan
+                  at any time through your account settings with a few simple clicks.
+                  We recognize that your needs may evolve,
+                  so we provide the option to adjust your plan as required.
+                  This flexibility ensures that you always have the most suitable
+                  plan for your current requirements, allowing you to get the most value from our service.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: black; color:azure " id="about">
+    <!-- footer all the links are correctly linked to distinct -->
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#teach" class="nav-link p-0 text-white">Features</a></li>
+            <li class="nav-item mb-2"><a href="./plans.html" class="nav-link p-0 text-white">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#faq" class="nav-link p-0 text-white">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-white">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://www.instagram.com/open_source_club?igsh=cmw4cnVvZW1mODVq"
+                class="nav-link p-0 text-white">instagram</a></li>
+            <li class="nav-item mb-2"><a href="https://www.whatsapp.com/" class="nav-link p-0 text-white">whatsapp</a>
+            </li>
+            <li class="nav-item mb-2"><a href="https://www.facebook.com/" class="nav-link p-0 text-white">facebook</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our OpenSource channel</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2024 OpenSource, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  </div>
+  </div>
+  </section>
+  </div>
+
+</body>
+
+</html>

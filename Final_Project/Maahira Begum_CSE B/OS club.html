@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to Bootstrap CSS for styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Link to custom stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>Open Source Club</title>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Brand logo -->
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" width="150" height="90" class="d-inline-block align-text-top">
+      </a>
+
+      <!-- Navbar toggle button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content wrapper -->
+  <div class="main-content">
+    <!-- About Us section -->
+    <section id="about" class="about-section text-center">
+      <h2>About Us</h2>
+      <p>Welcome to our Open Source Club, a vibrant community of passionate developers and designers. We focus on HTML, CSS, JavaScript, React, machine learning, and cutting-edge design practices. Whether you're a beginner eager to learn or an expert ready to share your knowledge, our club offers a collaborative space for everyone. We host workshops, hackathons, and coding sessions, encouraging creativity and innovation. Our mission is to empower members to contribute to open-source projects, build real-world skills, and foster a culture of learning and growth. Join us, and let's code a better future together!</p>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <!-- Individual project items -->
+        <div class="project-item">
+          <img src="p1.jpeg" alt="Project 1">
+          <p>This project involves crafting a professional and visually appealing resume using HTML and CSS. You'll learn how to structure content, apply styling, and create a responsive layout. The final product will showcase your skills, experience, and education in a clean, modern design that's easy to customize and update.</p>
+        </div>
+        <div class="project-item">
+          <img src="p2.jpeg" alt="Project 2">
+          <img src="p4.jpeg" alt="Project 4">
+          <img src="p5.jpeg" alt="Project 5">
+          <p>This project focuses on creating a simple navigation system between three pages: a home page, a black-themed page, and a white-themed page. Using HTML, CSS, and JavaScript, you'll build interactive buttons that seamlessly switch between these pages, demonstrating fundamental web development skills in styling and user interaction.</p>
+        </div>
+        <div class="project-item">
+          <img src="p3.jpeg" alt="Project 3">
+          <p>In this project, you'll design a visually appealing product card using HTML and CSS. The card will showcase product details such as an image, title, description, and price. You'll focus on layout, typography, and responsive design to ensure the card looks great on various devices and screen sizes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events section -->
+    <section id="events" class="events-section">
+      <h2>Events</h2>
+      <div class="event-container">
+        <!-- Individual event items -->
+        <div class="event-item">
+          <img src="e3.png" alt="Event 3">
+          <p>An amazing workshop was conducted by the club, showcasing innovative ideas and insights. A heartfelt shout-out to the presenters for their outstanding contributions, which made the event a resounding success.</p>
+        </div>
+        <div class="event-item">
+          <img src="e1.png" alt="Event 1">
+          <p>REACT WORKSHOP - Unveiling the Art of FED</p>
+          <img src="e2.png" alt="Event 2">
+        </div>
+        <div class="event-item">
+          <img src="e4.png" alt="Event 4">
+          <p>The event was a great success, featuring an engaging one-week machine learning challenge. Participants explored ML fundamentals, tackled real-world problems, and collaborated on projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact-section text-center">
+      <h2>Contact</h2>
+      <p>Phone: +1 234-567-8901</p>
+      <!-- Social media links -->
+      <a href="https://www.linkedin.com/company/open-source-club-crescent/" target="_blank"><!-- Linkedin link of the club-->
+        <img src="linkedin.png" alt="LinkedIn" width="60" height="60"><!-- Logo created using CANVA -->
+      </a>
+      <a href="https://www.instagram.com/open_source_club/" target="_blank"><!-- Insta link of the club -->
+        <img src="instagram.png" alt="Instagram" width="60" height="60"><!-- Logo created using CANVA -->
+      </a>
+    </section>
+
+    <!-- Join Us section -->
+    <section id="join" class="join-section text-center">
+      <h2>Join Our Club</h2>
+      <!-- Form for joining the club -->
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td>Phone Number:</td>
+          <td><input type="tel" id="phone" name="phone" required></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center;"><button type="submit">Join Now</button></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Subscribe section -->
+    <section id="subscribe" class="subscribe-section text-center">
+      <h2>Never Miss Our Story</h2>
+      <p>Subscribe to our newsletter to stay updated with the latest news and events!</p>
+      <!-- Newsletter subscription form -->
+      <form action="#" method="post">
+        <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
