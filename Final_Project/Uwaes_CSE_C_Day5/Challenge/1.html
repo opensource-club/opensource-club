@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Home</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"> <a href="1.html"> <img src="images/logo.png"></a></div>
+        <ul class="links">
+        <li class="home"><a href="1.html">Home</a></li>
+        <li class="about"><a href="2.html">About Us</a></li>
+        <li class="events"><a href="3.html">Events</a></li>
+        <li class="contact"><a href="4.html">Contact Us</a></li>
+      </ul>
+      <div class="register">
+      <a href="5.html" class="action_btn">Register</a>
+      </div>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li class="home"><a href="1.html">Home</a></li>
+      <li class="about"><a href="2.html">About Us</a></li>
+      <li class="events"><a href="3.html">Events</a></li>
+      <li class="contact"><a href="4.html">Contact Us</a></li>
+      <li class="register"><a href="5.html" class="action_btn">Register</a></li>
+    </div>
+  </header>
+
+<main>
+  <section class="about-us">
+    <div class="about-content">
+  <p><p>Welcome to the <span>Open Source Club</span> of BSACIST, where innovation meets collaboration! Our club is dedicated to fostering a community of passionate developers, enthusiasts, and learners who believe in the power of open-source software. Whether you're a seasoned coder or just starting out, the Open Source Club offers a platform to contribute to meaningful projects, learn from peers, and make a real-world impact. Join us in our mission to promote open-source culture, share knowledge, and build a better digital future together!</p>
+</p>
+</div>
+</section>
+</main>
+
+
+  <script>
+    const toggle_btn = document.querySelector('.toggle_btn')
+    const toggle_btnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggle_btn.onclick = function(){
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList('open')
+      const isclose = dropDownMenu.classList('close')
+
+      toggle_btn.classList = isOpen
+      ? 'fa-solid fa-bars'
+      : 'fa-solid fa-xmarks'
+    }
+  </script>
+
+
+
+     
+
+<!--Linking Registration form-->
+<!--Linking LinkedIn Profile-->
+<!--Linking Instagram Profile-->
+<footer>
+
+  <div class="container">
+    <div class="pagination">
+        <button class="btn1"><a href="#">⬅ Prev</a></button>
+        <ul class="point">
+            <li class="home" value="1"><a href="1.html">🏠</a></li>
+            <li class="about" value="2"><a href="2.html">About Us</a></li>
+            <li class="events" value="3"><a href="3.html">Events</a></li>
+            <li class="contact" value="4"><a href="4.html">Contact</a></li>
+            <li class="register" value="5"><a href="5.html">Register</a></li>
+        </ul>
+        <button class="btn2"><a href="2.html">Next ➡</a></button>
+    </div>
+</div>
+
+
+<center> 
+  <div class="wrapper">
+<div class="contact">
+    <center>
+      <h2>CONTACT</h2>
+  </center>
+</div>
+<div class="info">
+  <center>
+    <a>📞 +91 3508 3508 | 📧 opensourceclub@crescent.education | 📍 Vandalur, Tamil Nadu</a>
+</center> 
+</div>
+      <a href="register.html">
+          <div class="button">
+          <div class="icon">
+              <i class="fa-solid fa-registered"></i>
+          </div>
+          <span>Register for BOOTCAMP</span>
+      </div></a>
+      <a href="https://www.linkedIn.com/company/open-source-club-crescent/">
+          <div class="button">
+          <div class="icon">
+              <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <span>LinkedIn</span>
+      </div></a>
+      <a href="https://www.instagram.com/open_source_club/?hl=en">
+          <div class="button">
+          <div class="icon">
+              <i class="fab fa-instagram"></i>
+          </div>
+          <span>Instagram</span>
+      </div></a>
+  </div>
+</center>
+
+<p>&copy; 2024 Open Source Club. All ights reserved</p> <br />
+<!--Give pagination to redirect to other pages-->
+</footer>
+</body>
+</html>
