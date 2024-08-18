@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag for character encoding -->
+    <meta charset="UTF-8">
+    <!-- Meta tag for responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page displayed in the browser tab -->
+    <title>Open Source Club - Leaderboard</title>
+    <!-- Link to the Bootstrap CSS for responsive design and pre-built styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General body styling */
+        body {
+            /* Space for fixed navbar */
+            padding-top: 56px;
+            /* Red background color */
+            background-color: rgb(145, 15, 15);
+            /* Background image for added texture */
+            background-image: url('os2.webp');
+            /* Ensure the background image covers the entire page */
+            background-size: cover;
+            /* Center the background image */
+            background-position: center;
+            /* Keep the background image fixed during scrolling */
+            background-attachment: fixed;
+            /* White text color */
+            color: #ffffff;
+        }
+        /* Navbar styling */
+        .navbar {
+            /* Black background for the navbar */
+            background-color: #000000;
+        }
+        /* Navbar brand and link text color */
+        .navbar-brand, .nav-link {
+            /* Red color for navbar text */
+            color: #ba0000 !important;
+        }
+        /* Navbar link hover state */
+        .nav-link:hover {
+            /* Slightly lighter red for hover effect */
+            color: #e53935 !important;
+        }
+        /* Leaderboard container styling */
+        .leaderboard {
+            /* Space above the leaderboard */
+            margin-top: 20px;
+            /* Darker semi-transparent background for the leaderboard */
+            background: rgba(0, 0, 0, 0.8);
+            /* Padding inside the leaderboard container */
+            padding: 20px;
+            /* Rounded corners for a smooth look */
+            border-radius: 8px;
+        }
+        /* Leaderboard title styling */
+        .leaderboard h2 {
+            /* White color for the leaderboard title */
+            color: #ffffff;
+            /* Space below the leaderboard title */
+            margin-bottom: 40px;
+        }
+        /* Subheading styling within the leaderboard */
+        .leaderboard h4 {
+            /* White color for subheadings */
+            color: #ffffff;
+            /* Space above each section heading */
+            margin-top: 20px;
+        }
+        /* Leaderboard list item styling */
+        .leaderboard .list-group-item {
+            /* White color for leaderboard items */
+            color: #ffffff;
+            /* Slightly transparent background for list items */
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        /* Styling for odd-numbered items in the list */
+        .leaderboard .list-group-item:nth-child(odd) {
+            /* Slightly darker background for odd items */
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        /* Prizes section styling */
+        .prizes {
+            /* Space above the prizes section */
+            margin-top: 30px;
+        }
+        /* Prizes section title styling */
+        .prizes h4 {
+            /* White color for the prizes section title */
+            color: #ffffff;
+        }
+        /* Prizes list item styling */
+        .prizes .list-group-item {
+            /* Bold font for prize items */
+            font-weight: bold;
+            /* Darker background for prizes items */
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Prize description text styling */
+        .prizes .list-group-item span {
+            /* Normal font weight for prize descriptions */
+            font-weight: normal;
+            /* White color for prize descriptions */
+            color: #ffffff;
+        }
+        /* Additional spacing between Bootcamp and Design sections */
+        .row > .col-md-6 {
+            /* Space between Bootcamp and Design sections */
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <!-- Brand name displayed in the navbar -->
+        <a class="navbar-brand" href="#">Open Source Club</a>
+        <!-- Toggler/collapsible button for smaller screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Navigation link for Home page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- Navigation link for Members page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="members.html">Members</a>
+                </li>
+                <!-- Navigation link for Events page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <!-- Navigation link for Leaderboard page, marked as active -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Leaderboard Page Content -->
+    <div class="container leaderboard">
+        <!-- Leaderboard title centered on the page -->
+        <h2 class="text-center">Leaderboard</h2>
+        
+        <!-- Bootcamp Leaderboard -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Subheading for Bootcamp leaderboard -->
+                <h4>Bootcamp</h4>
+                <ul class="list-group">
+                    <!-- Bootcamp leaderboard items -->
+                    <li class="list-group-item">
+                        Akash kanna
+                        <span class="badge badge-primary badge-pill">95 points</span>
+                    </li>
+                    <li class="list-group-item">
+                        Karthika
+                        <span class="badge badge-primary badge-pill">90 points</span>
+                    </li>
+                    <li class="list-group-item">
+                        Kavya
+                        <span class="badge badge-primary badge-pill">85 points</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Design Leaderboard -->
+            <div class="col-md-6">
+                <!-- Subheading for Design leaderboard -->
+                <h4>Design</h4>
+                <ul class="list-group">
+                    <!-- Design leaderboard items -->
+                    <li class="list-group-item">
+                        Akashkanna
+                        <span class="badge badge-primary badge-pill">88 points</span>
+                    </li>
+                    <li class="list-group-item">
+                        Evangeline
+                        <span class="badge badge-primary badge-pill">82 points</span>
+                    </li>
+                    <li class="list-group-item">
+                        Thara
+                        <span class="badge badge-primary badge-pill">80 points</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Prizes Section -->
+        <div class="prizes">
+            <!-- Prizes section title centered on the page -->
+            <h4 class="text-center">Prizes</h4>
+            <ul class="list-group">
+                <!-- Prizes items -->
+                <li class="list-group-item">
+                    <span>1st Place : Akashkanna</span> <span>1000 Cash Prize</span>
+                </li>
+                <li class="list-group-item">
+                    <span>2nd Place : Nivetha</span> <span>500 Cash Prize</span>
+                </li>
+                <li class="list-group-item">
+                    <span>3rd Place : Shreya</span> <span>250 Cash Prize</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript to enable interactive functionality -->
+    <!-- jQuery library for DOM manipulation -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js for tooltips and popovers -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS for responsive design and interactivity -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
