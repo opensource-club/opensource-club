@@ -1,0 +1,198 @@
+/* The first part hold  general ind=formation of the websites html body say fontfamily,color,padding and margin*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;/* for background image to cover the entire size*/
+    color:black;
+}
+
+ 
+/* container is a class that provides a fixed width or layout for the content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+/* ADD the logo image and set the width and height corectly as per requirement */
+.logo-img {
+    width: 100px;
+    height: 60px;
+}
+/* The header colour is set to gray color in which the lest side holds logo right side holds navigation middile part holds the title */
+header {
+    background-color:gray ;
+    color: black;
+    text-align: center;
+}
+/*Set the navigation margin and padding as default one*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: aliceblue;
+}
+/* Add the backgroud image here for the hero .bg and give the club quote in the middle */
+#hero {
+    background: url('hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color:aqua;
+    text-align: center;
+    position: relative;
+    height: 70vh; /* Ensure the hero section takes up the full viewport height */
+    width: 100%; /* Ensure the hero section takes up the full width */
+    overflow: hidden; /* Prevents any overflow issues */
+}
+
+    
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* The cta button helps to  perfom some action say here it leads us to the page further*/
+
+.cta-button {
+    background-color:darkcyan;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+}
+/* Assign color for CTA button*/
+
+.cta-button:hover {
+    background-color:darkcyan;
+}
+/* set padding and margin for the contents aheading*/
+#about, #contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#about h2, #contact h2 {
+    font-size: 2em;
+    margin-bottom:30px;
+    color:darkcyan;
+}
+
+#events {
+    padding: 50px 0;
+    text-align: center;
+    background-color:mediumaquamarine;
+}
+
+#events h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: darkcyan;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* AS felx box is used in this make the necessary details like box radius ,box shadow ,width etc*/
+.event {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 300px;
+    text-align: left;
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.event h3 {
+    font-size: 1.5rem;
+    margin: 15px;
+    color: #333;
+}
+
+.event p {
+    margin: 15px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.event:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* similarliy assign  necessities fof the flex box of the  our team section*/
+#ourteam {
+    background-color: lightcyan;
+    color: darkcyan;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevents wrapping, forcing all items into a single row */
+}
+
+.team-member {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 30%; /* Ensures all team members fit in a single row */
+    position: relative;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Pop-up effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* In the contact section give email id and link leading to the insta page */
+
+#contact{
+    text-decoration: solid;
+    background-color: aquamarine;
+  text-align: center;
+  color: rgb(3, 66, 66);
+}
+/* give footer details and add copy rightss*?
+footer {
+    background-color:lightgrey;
+    color:darkcyan;
+    padding: 80px;
+    text-align: center;
+} 

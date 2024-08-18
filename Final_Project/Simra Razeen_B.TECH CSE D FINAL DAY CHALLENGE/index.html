@@ -1,0 +1,105 @@
+<!DOCTYPE html> a<!-- Add the !doctype for the browser to know which file it is -->
+<html lang="en"><!-- describe lang as english -->
+<head><!-- open the head tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- give title for the html document-->
+    <title>Open Source Club - Crescent College</title>
+    <!-- link the .html doc with external css file using link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- in the header create container to hold different section of the file that is about,events,our team and contact-->
+        <div class="container">
+            <!-- I have created the logo for the open source club and intergrated in the left corner of the website -->
+            <img src="logo.png" alt="Open Source Club Logo" class="logo-img">
+            <center><h1>Open Source Club of CSE Department</h1></center> 
+            <!-- use the nav tag for navigating to each section from the header section-->
+            <nav>
+                <ul> 
+                    <!--create unorder list and give link for each section-->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#ourteam">Our Team</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <!-- In the hero section add a quote about the club and  also a background image using the  external css styling-->
+        <div class="hero-content">
+            <p>Let's code for a better future!!</p>
+            <!-- CTA button is used to perform specific action-->
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <!-- In the about section  i have added the image of the faculty cordinator of the club along with the objective of the club -->
+        <center><img src="head,jpg.jpg" alt="head"></center>
+        <p>We are a community of developers and enthusiasts passionate to provide a forum for enhancing professional skills and also to expand their new horizons to catch up with the latest open-source technology in the IT industr.</p>
+
+    <section id="events">
+        <h2>Events</h2>
+        <!-- the events container conains about the event that had occured in the club , I have used flex box desingn with pop up model for showcasing each event-->
+        <div class="events-container">
+            <div class="event">
+                <img src="event1.jpg" alt="ML workshop">
+                <h3>Machine Learning Workshop</h3>
+                <p>The Open Source Club is organizing a Machine Learning workshop 🤖📚, and I highly recommend you all to register for it! 📝 It's a fantastic opportunity to dive into the world of ML and enhance our skills. Let's learn and grow together! 🚀</p>
+                <p>DATE: 19 AUG 2023</p>
+            </div>
+            <div class="event">
+                <img src="event 2.jpg" alt="React Craft">
+                <h3>React Craft</h3>
+                <p>Unveiling the art of frontend development - The dynamic 'React Craft' workshop. A heartfelt thanks to our resource person, Ahamed Ajas, for his outstanding contribution.</p>
+                <p>DATE: 20 MAR 2024</p>
+            </div>
+            <div class="event">
+                <img src="event3.jpg" alt="Git Workshop">
+                <h3>5 Days Bootcamp on HTML & CSS</h3>
+                <p>Ready to level up🏅 your web design skills👩🏻‍💻? Join our 5-Day HTML & CSS Bootcamp and exciting challenges! 🚀</p>
+                <p>DATE: 12 AUG 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ourteam">
+        <h2>Our Team</h2>
+        <!-- This section tells the information about the  team member of the open source club-->
+        <div class="team-gallery">
+            <div class="team-member">
+                <img src="team1.jpg" alt="Team Member 1">
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2">
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="Team Member 3">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <!-- This section tellls about the contact details of the club -->
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:opensourceclub2023@gmail.com">opensourceclub2023@gmail.com</a></p>
+        <!-- provide or directs path to the offical instagram page of the club-->
+        <p>Follow us on Instagram!:
+            <a href="https://www.instagram.com/open_source_club/" target="_blank">
+                <i class="fab fa-instagram"></i> @open_source_club
+            </a>
+        </p>
+    </section>
+    
+
+    <footer>
+        <!-- give copy rights and close the body and html tag-->
+        <p>&copy; 2024 Open Source Club, Crescent College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
