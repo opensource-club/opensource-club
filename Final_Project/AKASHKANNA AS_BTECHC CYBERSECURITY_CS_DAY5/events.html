@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag for character encoding -->
+    <meta charset="UTF-8">
+    <!-- Meta tag for responsive design on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page displayed in the browser tab -->
+    <title>Open Source Club - clubs</title>
+    <!-- Link to the Bootstrap CSS for responsive design and pre-built styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General body styling */
+        body {
+            /* Space for fixed navbar */
+            padding-top: 56px;
+            /* Black background color for the entire page */
+            background-color: #000000;
+            /* Background image for added texture */
+            background-image: url('os2.webp');
+            /* White text color */
+            color: #ffffff;
+            /* Font choice for readability */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            /* Black background color for the navbar */
+            background-color: #000000;
+        }
+        /* Navbar brand and link text color */
+        .navbar-brand, .nav-link {
+            /* Red color for navbar text */
+            color: #ff0000 !important;
+        }
+        /* Navbar link active state styling */
+        .nav-item.active .nav-link {
+            /* Red color for the active link */
+            color: #ff0000 !important;
+        }
+
+        /* Container styling */
+        .container {
+            /* Space above the container */
+            margin-top: 30px;
+        }
+
+        /* Section background styling */
+        .section-background {
+            /* Dark red background color for the section */
+            background-color: rgb(150, 7, 7);
+            /* Padding inside the section container */
+            padding: 40px;
+            /* Rounded corners for a smooth look */
+            border-radius: 10px;
+            /* Subtle shadow for a 3D effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section title styling */
+        .section-title {
+            /* Space below the section title */
+            margin-bottom: 30px;
+            /* Black color for section titles */
+            color: #000000;
+        }
+
+        /* Card styling */
+        .card {
+            /* Remove default border */
+            border: none;
+            /* Rounded corners for the card */
+            border-radius: 15px;
+            /* Subtle shadow for depth */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Smooth transition on hover */
+            transition: transform 0.3s ease-in-out;
+        }
+        /* Card hover effect */
+        .card:hover {
+            /* Slightly enlarge card on hover */
+            transform: scale(1.05);
+        }
+
+        /* Card image styling */
+        .card-img-top {
+            /* Match card border radius */
+            border-top-left-radius: 15px;
+            /* Match card border radius */
+            border-top-right-radius: 15px;
+            /* Fixed height for card images */
+            height: 200px;
+            /* Ensure image covers the entire area */
+            object-fit: cover;
+        }
+
+        /* Card body styling */
+        .card-body {
+            /* Padding inside the card body */
+            padding: 20px;
+        }
+
+        /* Card title styling */
+        .card-title {
+            /* Larger font size for titles */
+            font-size: 1.5rem;
+            /* Black color for card titles */
+            color: #000000;
+        }
+
+        /* Card text styling */
+        .card-text {
+            /* Standard font size for text */
+            font-size: 1rem;
+            /* Dark grey color for readability */
+            color: #555;
+        }
+
+        /* Sliding form container styling */
+        #registerFormContainer {
+            /* Fixed position at the bottom of the page */
+            position: fixed;
+            /* Initially hidden off-screen */
+            bottom: -100%;
+            /* Align to the left */
+            left: 0;
+            /* Full width */
+            width: 100%;
+            /* Semi-transparent black background */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Padding inside the form container */
+            padding: 20px;
+            /* Smooth transition for sliding effect */
+            transition: bottom 0.5s ease-in-out;
+            /* Higher z-index to overlay other content */
+            z-index: 1000;
+        }
+        /* Show the form container when 'show' class is added */
+        #registerFormContainer.show {
+            /* Slide up to visible position */
+            bottom: 0;
+        }
+        /* Styling for the embedded iframe */
+        #registerFormContainer iframe {
+            /* Full width */
+            width: 100%;
+            /* Fixed height */
+            height: 500px;
+            /* Remove border */
+            border: none;
+            /* Rounded corners */
+            border-radius: 10px;
+        }
+
+        /* Button to toggle the form */
+        #registerFormButton {
+            /* Fixed position at the bottom center */
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            /* Center the button horizontally */
+            transform: translateX(-50%);
+            /* Dark red background color */
+            background-color: rgb(150, 7, 7);
+            /* White text color */
+            color: #ffffff;
+            /* Padding inside the button */
+            padding: 15px 30px;
+            /* Rounded top corners for a smooth look */
+            border-radius: 30px 30px 0 0;
+            /* Larger font size */
+            font-size: 1.2rem;
+            /* Pointer cursor on hover */
+            cursor: pointer;
+            /* Higher z-index to overlay other content */
+            z-index: 1001;
+        }
+        /* Button hover effect */
+        #registerFormButton:hover {
+            /* Lighter red background color on hover */
+            background-color: rgb(200, 0, 0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <!-- Brand name displayed in the navbar -->
+        <a class="navbar-brand" href="#">Open Source Club</a>
+        <!-- Toggler/collapsible button for smaller screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Navigation links for different pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="members.html">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Tables Page Content -->
+    <div class="container">
+        <!-- Section showcasing Open Source events -->
+        <div class="section-background">
+            <!-- Section title centered on the page -->
+            <h2 class="section-title text-center">Our Open Source Events</h2>
+            <div class="row">
+                <!-- Coding Event Card -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Image for the coding event -->
+                        <img src="code.jpg" class="card-img-top" alt="Coding Event">
+                        <div class="card-body">
+                            <!-- Title for the coding event -->
+                            <h5 class="card-title">Coding Event</h5>
+                            <!-- Description of the coding event -->
+                            <p class="card-text">Join us for an intense coding event where developers come together to solve problems and build innovative solutions. Enhance your coding skills and collaborate with peers.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Non-Technical Event Card -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Image for the non-technical event -->
+                        <img src="nt.jpeg" class="card-img-top" alt="Non-Technical Event">
+                        <div class="card-body">
+                            <!-- Title for the non-technical event -->
+                            <h5 class="card-title">Non-Technical Event</h5>
+                            <!-- Description of the non-technical event -->
+                            <p class="card-text">Participate in events that focus on soft skills, networking, and community building. These sessions are designed to enhance your interpersonal skills and connect with like-minded individuals.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- HTML/CSS Bootcamp Card -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Image for the HTML/CSS bootcamp -->
+                        <img src="boot.jpg" class="card-img-top" alt="HTML/CSS Bootcamp">
+                        <div class="card-body">
+                            <!-- Title for the HTML/CSS bootcamp -->
+                            <h5 class="card-title">HTML/CSS Bootcamp</h5>
+                            <!-- Description of the HTML/CSS bootcamp -->
+                            <p class="card-text">A comprehensive bootcamp for beginners and intermediate learners to master HTML and CSS. Build responsive web pages and understand the fundamentals of web design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sliding Google Form -->
+    <div id="registerFormContainer">
+        <!-- Embedded Google Form for registration -->
+        <iframe src="file:///C:/Users/pokki/Desktop/AKASHKANNA%20AS_BTECHC%20CYBERSECURITY_CS_DAY5/aki_files/classic&nofs&defer=false&disableSmartEmbed=1.html"></iframe>
+    </div>
+
+    <!-- Toggle Button for Google Form -->
+    <button id="registerFormButton" onclick="toggleForm()">Register to Club</button>
+
+    <!-- JavaScript to enable interactive functionality -->
+    <!-- jQuery library for DOM manipulation -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js for tooltips and popovers -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS for responsive design and interactivity -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        /* Function to toggle the visibility of the registration form */
+        function toggleForm() {
+            // Get the form container element
+            var formContainer = document.getElementById("registerFormContainer");
+            // Check if the form is currently visible
+            if (formContainer.classList.contains("show")) {
+                // Hide the form if it is visible
+                formContainer.classList.remove("show");
+            } else {
+                // Show the form if it is hidden
+                formContainer.classList.add("show");
+            }
+        }
+    </script>
+</body>
+</html>
