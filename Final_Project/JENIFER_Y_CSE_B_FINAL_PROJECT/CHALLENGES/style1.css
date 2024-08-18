@@ -1,0 +1,32 @@
+
+*{
+    display: block;
+    background-color: lavender;
+}
+#submit-registration{
+    padding: 5px;
+    margin-top: 1%;
+   
+    background-color: blue;
+    color: whitesmoke;
+}
+#reset-registration{
+    padding: 5px;
+   margin-top: 1%;
+    background-color: blue;
+    color: whitesmoke;
+}
+legend{
+    text-align: center;
+    font:bolder;
+}
+button{
+    background-color: black;
+    color: white;
+    font-display:initial;
+    margin-top: 1%;
+    cursor:pointer;
+}
+.one,.two,.three,.four{
+    display: inline;
+}
