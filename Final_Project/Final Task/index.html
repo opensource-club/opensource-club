@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Club</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Open Source Club</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="details.html">Details</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home" class="jumbotron jumbotron-fluid text-center text-white bg-primary">
+        <div class="container">
+            <h1 class="display-4">Welcome to the Open Source Club</h1>
+            <p class="lead">Join us in our mission to promote and contribute to open source projects!</p>
+            <a href="#about" class="btn btn-lg btn-light">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- About Section -->
+        <section id="about" class="my-5">
+            <h2 class="text-center mb-4">About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>We are a group of passionate individuals who believe in the power of open source. Our club provides a platform for students to collaborate, learn, and contribute to open source projects.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="How-to-contribute-to-open-source-projects.jpg" alt="About Us" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="my-5">
+            <h2 class="text-center mb-4">Upcoming Events</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="join-now-button-web-banner-templates-illustratio-vector.jpg" class="card-img-top" alt="Event 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Event 1</h5>
+                            <p class="card-text">Join us for our first event of the semester. It's going to be exciting!</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="dont-miss-out-button-dont-miss-out-sign-speech-bubble-banner-label-template-illustration-vector (1).jpg" class="card-img-top" alt="Event 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Event 2</h5>
+                            <p class="card-text">Don't miss our next workshop on open source contributions.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="OIP.jpeg" class="card-img-top" alt="Event 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Event 3</h5>
+                            <p class="card-text">Join our hackathon and collaborate on exciting open source projects.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table of Events -->
+            <h3 class="text-center mb-4">Detailed Event Schedule</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Description</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-09-10</td>
+                        <td>Opening Ceremony</td>
+                        <td>Welcome event for the new semester.</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>2024-09-17</td>
+                        <td>Workshop on Git</td>
+                        <td>Learn the basics of using Git for version control.</td>
+                        <td>Room 201</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-01</td>
+                        <td>Hackathon</td>
+                        <td>24-hour coding challenge to create innovative projects.</td>
+                        <td>Lab A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="my-5">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Open Source Club. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
