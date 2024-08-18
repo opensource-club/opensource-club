@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Open Source Technology Club</title>
+</head>
+<body>
+    <header>
+        <h1>Open Source Technology Club</h1>
+       
+    </header>
+
+    <section id="login">
+        <div class="container">
+            <h2>Login</h2>
+            <form id="loginForm" action="home1.html" method="get" onsubmit="return validateCaptcha();">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="captcha">CAPTCHA:</label>
+                <input type="text" id="captchaInput" name="captchaInput" required>
+                <div class="captcha-container">
+                    <span id="captcha"></span>
+                    <button type="button" onclick="generateCaptcha()">Refresh CAPTCHA</button>
+                </div><br>
+                <button type="submit">login</button>
+            </form>
+            <p>Don't have an account? <a href="http://127.0.0.1:5500/signup.html">Sign up here</a>.</p>
+        </div>
+        <script>
+            // this function is used generate  random capcha
+            function generateCaptcha() {
+                const captcha = Math.random().toString(36).substring(2, 8);
+                document.getElementById('captcha').innerText = captcha;
+                document.getElementById('captcha').dataset.captcha = captcha;
+            }
+            // this is used validate our entered capcha 
+            // only permits if enter correct captcha 
+            function validateCaptcha() {
+                const userCaptcha = document.getElementById('captchaInput').value.trim();
+                const generatedCaptcha = document.getElementById('captcha').dataset.captcha;
+                const username = document.getElementById('username').value.trim();
+                const password = document.getElementById('password').value.trim();
+        
+                if (userCaptcha !== generatedCaptcha) {
+                    alert('Invalid CAPTCHA. Please try again.');
+                    generateCaptcha();
+                    return false;
+                }
+        
+                // Hardcoded login credentials
+                if (username === 'LOKESH BHARATHI' && password === '123456789') {
+                    // Set session storage to indicate the user is logged in
+                    sessionStorage.setItem('isLoggedIn', 'true');
+                    return true;  // Allow the form to submit and navigate to index.html
+                } else {
+                    alert('Invalid username or password. Please try again.');
+                    return false;  // Prevent form submission
+                }
+            }
+        
+            // Generate initial CAPTCHA on page load
+            window.onload = generateCaptcha;
+        </script>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Open Source Technology Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"], 
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+p {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+</style>

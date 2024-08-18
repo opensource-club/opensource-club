@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Open Source Technology Club</title>
+</head>
+<body>
+    <header>
+        <h1>Open Source Technology Club</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/home1.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/aboutus.html">About Us</a></li>
+                <li><a href="http://127.0.0.1:5500/events.html">Events</a></li>
+                <li><a href="http://127.0.0.1:5500/joinus.html" class="active">Join Us</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact Us</a></li>
+                <li><a href="http://127.0.0.1:5500/gallery1.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="join">
+        <div class="container">
+            <h2>Join the Open Source Technology Club</h2>
+            <p>We’re excited that you’re interested in joining our club! Here’s how you can become a member:</p>
+            <ul>
+                <li>Be passionate about open source technologies.</li>
+                <li>Attend at least one of our events or meetings.</li>
+                <li>Fill out the membership form below with accurate information.</li>
+                <li>Submit the form and wait for our confirmation email.</li>
+                <li>Once approved, you’ll receive a welcome package with all the details to get started!</li>
+            </ul>
+
+            <h3>Membership Form</h3>
+            <form action="submit.html" method="get">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="year">Year of Study:</label>
+                <select id="year" name="year" required>
+                    <option value="freshman">Freshman</option>
+                    <option value="sophomore">Sophomore</option>
+                    <option value="junior">Junior</option>
+                    <option value="senior">Senior</option>
+                </select>
+
+                <label for="skills">Technical Skills (Optional):</label>
+                <textarea id="skills" name="skills" rows="4" placeholder="List any programming languages, frameworks, or tools you're familiar with"></textarea>
+
+                <label for="reason">Why do you want to join the club?</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+
+                <button type="submit">submit</a></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Open Source Technology Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select, 
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: fit-content;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+</style>

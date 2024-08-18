@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Technology Club</title>
+    <link rel="stylesheet" href="home1.css">
+</head>
+<body>
+    <script>
+        // Redirect to login page if user is not logged in
+        if (!sessionStorage.getItem('isLoggedIn')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+    <header>
+        <h1>Open Source Technology Club</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/home1.html" class=active>Home</a></li>
+                <li><a href="http://127.0.0.1:5500/aboutus.html">About us</a></li>
+                <li><a href="http://127.0.0.1:5500/events.html">Events</a></li>
+                <li><a href="http://127.0.0.1:5500/joinus.html">Join us</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">Contact us</a></li>
+                <li><a href="http://127.0.0.1:5500/gallery1.html">Gallery</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to the Open Source Technology Club</h2>
+            <p>At the Open Source Technology Club, we are dedicated to create a community of innovators, developers, and tech enthusiasts who are passionate about open-source software. Join us to learn, collaborate, and contribute to exciting projects that make a difference.</p>
+
+            <h3>Why Join Us?</h3>
+            <ul>
+                <li>Learn cutting-edge technologies and tools used in the open-source community.</li>
+                <li>Contribute to real-world projects that enhance your resume and portfolio.</li>
+                <li>Connect with like-minded students and professionals who share your passion for technology.</li>
+                <li>Participate in workshops, hackathons, and coding events.</li>
+            </ul>
+
+            <h3>Upcoming Events</h3>
+            <p>We host a variety of events throughout the year, including coding workshops, guest lectures, and collaborative hackathons. Check out our <a href="events.html">Events</a> page to stay updated on what’s coming next!</p>
+
+            <h3>Join Our Community</h3>
+            <p>Whether you’re a seasoned developer or just starting out, the Open Source Technology Club is the perfect place to grow your skills and contribute to something meaningful. <a href="joinus.html">Join us today!</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Open Source Technology Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
